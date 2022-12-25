@@ -1,0 +1,96 @@
+/*page3 nana*/
+.container-bg {
+    background-color: #96b9d9;
+    border-radius: 150px;
+    width: 1438px;
+    height: 829px;
+}
+
+.text-why {
+    color: #164772;
+    font-weight: bold;
+    font-size: 40px;
+    margin-top: 70px;
+    padding-top: 100px;
+}
+
+.container-why {
+    justify-content: center;
+    width: 1400px;
+    padding: 25px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.course {
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    max-width: 100%;
+    margin: 22px;
+    overflow: hidden;
+    width: 600px;
+    height: 200px;
+    position: relative;
+}
+
+.course-preview {
+    background-color: #164772;
+    color: #fff;
+    padding: 30px;
+    max-width: 200px;
+}
+
+.course-info {
+    padding: 50px;
+    position: relative;
+    width: 100%;
+}
+
+.course-info p {
+    font-size: 12px;
+    text-align: left;
+    line-height: auto;
+}
+.course p {
+    font-weight: medium;
+    font-size: 20px;
+    letter-spacing: 1px;
+    margin: 18px 0px;
+    color: #838fa7;
+}
+.course h2 {
+    margin: 0;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-size: 40px;
+    font-family: "Inter", sans-serif;
+    color: #164772;
+    text-align: left;
+}
+
+.tombol3 {
+    border-radius: 26.5px;
+    background-color: #164772;
+    border: 1px solid #164772;
+    box-shadow: 0 16px 22px -17px #03153b;
+    color: #fff;
+    cursor: pointer;
+    font-size: 25px;
+    line-height: 20px;
+    padding: 20px;
+    position: center;
+    bottom: 20px;
+    right: 20px;
+    z-index: 999;
+}
+
+.tombol3:hover {
+    background-color: #96b9d9;
+    color: #164772;
+}
+
+.tombol3:focus {
+    outline: none;
+}

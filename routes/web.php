@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 
+use App\Http\Controllers\HomeController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,6 +15,46 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+// Route::get('/', function () {
+//     return view('landing_page');
+// });
+
+// Route::get('/dbConfig', function () {
+//     return view('dbConfig');
+// });
+
+// Route::get('/register', function () {
+//     return view('register');
+// });
+
+// Route::get('/login', function () {
+//     return view('login');
+// });
+
 Route::get('/', function () {
-    return view('welcome');
+    return view('landing_page');
 });
+
+Route::middleware([
+    'auth:sanctum',
+    config('jetstream.auth_session'),
+    'verified'
+])->group(function () {
+    Route::get('/dashboard', function () {
+        return view('dashboard');
+    })->name('dashboard');
+});
+
+Route::get('/redirect',[HomeController::class,'redirect']);
+
+Route::get('/pricing', function () {
+    return view('pricing');
+});
+
+Route::get('/contact', function () {
+    return view('contact');
+});
+
+// Route::get('/regis', function () {
+//     return view('register');
+// });
