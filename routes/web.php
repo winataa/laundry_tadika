@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\CategoryController;
 
 /*
 |--------------------------------------------------------------------------
@@ -51,10 +52,35 @@ Route::get('/pricing', function () {
     return view('pricing');
 });
 
-Route::get('/contact', function () {
+Route::get('/con', function () {
     return view('contact');
 });
 
 // Route::get('/regis', function () {
 //     return view('register');
 // });
+
+Route::get('/percobaan', function () {
+    return view('admin.layanan.layanan');
+});
+
+Route::get('/create', function () {
+    return view('admin.category.create');;
+});
+
+// Route::get('cat',[app\Http\Controllers\CategoryController::class, 'index']);
+// Route::get('/redirect',[HomeController::class,'redirect']);
+// Route::get('category', [CategoryController::class, 'index']);
+
+Route::controller(CategoryController::class)->group(function(){
+    Route::get('/category', 'index');
+    Route::get('/category-create', 'create');
+    Route::post('/category-store', 'store');
+    Route::get('/category-edit-{category}', 'edit');
+    Route::put('/category-update-{category}', 'update');
+    Route::get('/category-delete-{category}', 'delete');
+   // Route::get('category/edit/{id}', 'edit');
+
+
+
+});
