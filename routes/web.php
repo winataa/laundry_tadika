@@ -51,10 +51,14 @@ Route::get('/pricing', function () {
     return view('pricing');
 });
 
-Route::get('/contact', function () {
-    return view('contact');
-});
+// Route::get('/contact', function () {
+//     return view('contact');
+// });
 
 // Route::get('/regis', function () {
 //     return view('register');
 // });
+
+Route::get('/kontak', function () {
+    return view('kontak');
+});
