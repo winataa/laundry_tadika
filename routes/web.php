@@ -52,7 +52,7 @@ Route::get('/pricing', function () {
     return view('pricing');
 });
 
-Route::get('/contact', function () {
+Route::get('/kontak', function () {
     return view('kontak');
 });
 
