@@ -42,8 +42,18 @@ Route::middleware([
     'verified'
 ])->group(function () {
     Route::get('/dashboard', function () {
-        return view('dashboard');
+        return view('admin.dashboardAdmin');
     })->name('dashboard');
+    // Route::get('/dashboard', [DashboardController::class, 'index']);
+    Route::controller(CategoryController::class)->group(function(){
+        Route::get('/category', 'index');
+        Route::get('/category-create', 'create');
+        Route::post('/category-store', 'store');
+        Route::get('/category-edit-{category}', 'edit');
+        Route::put('/category-update-{category}', 'update');
+        Route::get('/category-delete-{category}', 'delete');
+       // Route::get('category/edit/{id}', 'edit');
+    });
     
 });
 
@@ -73,12 +83,12 @@ Route::get('/create', function () {
 // Route::get('/redirect',[HomeController::class,'redirect']);
 // Route::get('category', [CategoryController::class, 'index']);
 
-Route::controller(CategoryController::class)->group(function(){
-    Route::get('/category', 'index');
-    Route::get('/category-create', 'create');
-    Route::post('/category-store', 'store');
-    Route::get('/category-edit-{category}', 'edit');
-    Route::put('/category-update-{category}', 'update');
-    Route::get('/category-delete-{category}', 'delete');
-   // Route::get('category/edit/{id}', 'edit');
-});
+// Route::controller(CategoryController::class)->group(function(){
+//     Route::get('/category', 'index');
+//     Route::get('/category-create', 'create');
+//     Route::post('/category-store', 'store');
+//     Route::get('/category-edit-{category}', 'edit');
+//     Route::put('/category-update-{category}', 'update');
+//     Route::get('/category-delete-{category}', 'delete');
+//    // Route::get('category/edit/{id}', 'edit');
+// });
