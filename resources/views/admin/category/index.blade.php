@@ -10,10 +10,9 @@
 
 @section('content')
 <div class="row">
-    <div class="col-12 grid-margin stretch-card">
-        <div class="card">
-            <div class="card-body">
-            
+  <div class="col-lg-12 grid-margin stretch-card">
+    <div class="card">
+        <div class="card-body">
               {{-- <div class="row">
                 <div class="col-md-12">
                     @if(session()->has('message'))
@@ -24,7 +23,8 @@
               </div> --}}
 
             <br>
-            <table class="table table-bordered table-striped" width="100%" class="display nowrap">
+            <div class="table-responsive"> 
+              <table class="table table-striped" class="display nowrap">
             <thead>
                 <tr>
                     <th>ID</th>
@@ -58,6 +58,7 @@
 
           </tbody>
         </table>
+      </div>
             </div>
           </div>
     </div>
