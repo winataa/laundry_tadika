@@ -53,7 +53,7 @@ Route::get('/pricing', function () {
 });
 
 Route::get('/contact', function () {
-    return view('contact');
+    return view('kontak');
 });
 
 // Route::get('/regis', function () {
