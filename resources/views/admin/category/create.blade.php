@@ -20,6 +20,8 @@
                     </ul>
                 </div>
             @endif
+            
+         
                 <h4 class="card-title">Category of Tadika Laundry</h4>
               <form class="forms-sample" action="{{ url('category-store') }}" method="POST" enctype="multipart/form-data">
                 @csrf

@@ -13,15 +13,16 @@
   <div class="col-lg-12 grid-margin stretch-card">
     <div class="card">
         <div class="card-body">
-              {{-- <div class="row">
+              <div class="row">
                 <div class="col-md-12">
                     @if(session()->has('message'))
                     <div class="alert alert-success text-center">{{ session('message') }}
                     </div>
                     @endif
                 </div>
-              </div> --}}
+              </div>
 
+              {{-- <div class="flash-data" data-flashdata={{ $this->session->flashdata('flash') }}></div> --}}
             <br>
             <div class="table-responsive"> 
               <table class="table table-striped" class="display nowrap">
