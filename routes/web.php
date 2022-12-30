@@ -62,3 +62,7 @@ Route::get('/pricing', function () {
 Route::get('/kontak', function () {
     return view('kontak');
 });
+
+Route::get('/pricing', function () {
+    return view('pricing');
+});

@@ -229,7 +229,7 @@
             
           <center>
           <div>
-          <a class="btn tombolver2 px-5 text-center" style="text-align: center" href="#" data-aos="fade-down">What to Clean?</a>
+          <a class="btn tombolver2 px-5 text-center" style="text-align: center" href="/pricing" data-aos="fade-down">What to Clean?</a>
         </div>
           </center>
         </div>
@@ -295,8 +295,8 @@
         </center>
     
         <center>
-        <button class="floating-btn tombol3" data-aos="fade-down">
-            See More Who Trust Us
+        <button class="floating-btn tombol3" data-aos="fade-down"  >
+        <a style="text-decoration:none"  class="" href="#testi1" style="color:white">See More Who Trust Us 
         </button>
         </center>
 
@@ -343,7 +343,7 @@
 
      
     <center>
-      <div class="testi"> 
+      <div class="testi" id="testi1"> 
       <div class="judultesti" data-aos="fade-up">
           <h2>Our Lovely Testimonials</h2>
       </div>
@@ -415,10 +415,12 @@
   <div class="footermain" >
       <div class="footer-content" data-aos="fade-up">
           <center>
-          <h2>More About Tadika Laundry?</h2>
-              <button class="floating-button fbtn">
-                  Get in Touch
+          <h2 style="color:white">More About Tadika Laundry?</h2>
+              <button class="floating-button fbtn"> 
+                <div>
+              <a href="https://instagram.com/laundrytadika?igshid=YmMyMTA2M2Y="  style="text-decoration:none" style="color:white" > Get in Touch 
               </button>
+    
               <button class="floating-button fbtn">
                   View our FAQs
               </button>

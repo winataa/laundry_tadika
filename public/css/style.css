@@ -426,8 +426,8 @@ hr {
   border-radius: 150px;
   width: 100%;
   height: 100%;
-  /* width: 1438px;
-  height: 829px; */
+  /* width: 1438px; */
+  height: 820px; 
   margin:auto;
 }
 
@@ -568,7 +568,7 @@ ul {
   background-color: #ffffff;
   border: 1px solid #ffffff;
   box-shadow: 0 16px 22px -17px #03153b;
-  color: #164772;
+  color: #163372;
   cursor: pointer;
   font-size: 16px;
   line-height: 20px;
