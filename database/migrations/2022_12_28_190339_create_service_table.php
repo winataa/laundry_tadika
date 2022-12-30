@@ -13,12 +13,21 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('service', function (Blueprint $table) {
-            $table->id();
-            $table->string('name');
-            $table->string('image')->nullable();
+        Schema::create('services', function (Blueprint $table) {
+            $table->bigIncrements('service_id');
+            $table->unsignedBigInteger('id_category');
+            $table->string('product');
+            $table->integer('laundry_price');
+            $table->integer('dryclean_price');
+            $table->integer('wash_price');
+            $table->integer('dry_price');
+            $table->integer('iron_price');
             $table->string('image')->nullable();
             $table->timestamps();
+        });
+
+        Schema::table('services', function (Blueprint $table) {
+            $table->foreign('id_category')->references('id')->on('categories')->onUpdate('cascade')->onDelete('cascade');
         });
     }
 

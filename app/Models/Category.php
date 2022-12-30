@@ -10,10 +10,8 @@ class Category extends Model
     use HasFactory;
     protected $table = 'categories';
 
-    protected $fillable = [
-        'name',
-        'description',
-        'image'
-
-    ];
+    protected $guarded = [];
+    // public function service(){
+    //     return $this->hasMany(Service::class);
+    // }
 }

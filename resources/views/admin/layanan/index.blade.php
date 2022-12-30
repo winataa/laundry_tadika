@@ -3,7 +3,7 @@
 @section('page-heading')
 <div class="justify-content-between mb-4">
     <h1 class="h1 mb-0 text-gray-800 mb-4 ">Service</h1>
-    <a href="{{ url('category-create') }}" class="btn btn-primary">Add Service</a> <br>
+    <a href="{{ url('service-create') }}" class="btn btn-primary">Add Service</a> <br>
 
 </div>
 @endsection
@@ -29,26 +29,31 @@
             <thead>
                 <tr>
                     <th>ID</th>
-                    <th>Service</th>
-                    <th>Category</th>
-                    <th>Price</th>
+                    <th>Product</th>
+                    <th>Laundry Price</th>
+                    <th>Dry Cleaning Price</th>
+                    <th>Wash Price</th>
+                    <th>Dry Price</th> 
+                    <th>Iron Price</th>
                     <th>Action</th>
                 </tr>
             </thead>
             <tbody>
-              @foreach ($kategori as $c)
+              @foreach ($service as $s)
               <tr>
-                  <td>{{ $c->id  }}</td>
-                  <td>{{ $c->name  }}</td>
-                  <td><img src="{{ asset('/uploads/category/'.$c->image) }}" alt="" style="margin-top: 10px" width="60px" height="60px">
-                    {{ $c->image  }}
-                    
+                  <td>{{ $s->service_id }}</td>
+                  <td>{{ $s->product  }}</td>
+                  <td>{{ $s->laundry_price}}</td>
+                  <td>{{ $s->dryclean_price}}</td>
+                  <td>{{ $s->wash_price}}</td>
+                  <td>{{ $s->dry_price}}</td>
+                  <td>{{ $s->iron_price}}</td>
                   <td>
                     <div style="display: flex">
-                       <a href="{{ url('category-edit-'.$c->id)}}" class="btn btn-info">Edit</a>
+                       <a href="{{ url('service-edit-'.$s->service_id)}}" class="btn btn-info">Edit</a>
                      <form action="" method="POST" class="d-inline">
                       @method('delete')
-                      <a href="{{ url('category-delete-'.$c->id)}}" class='btn btn-danger'>Delete</a>
+                      <a href="{{ url('service-delete-'.$s->service_id)}}" class='btn btn-danger'>Delete</a>
                      </form>
                     </div>
                      

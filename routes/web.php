@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\ServiceController;
 use App\Http\Controllers\CategoryController;
 
 /*
@@ -36,6 +37,10 @@ Route::get('/', function () {
     return view('landing_page');
 });
 
+Route::get('/we', function () {
+    return view('admin.dashboardAdmin');
+});
+
 Route::middleware([
     'auth:sanctum',
     config('jetstream.auth_session'),
@@ -44,7 +49,7 @@ Route::middleware([
     Route::get('/dashboard', function () {
         return view('admin.dashboardAdmin');
     })->name('dashboard');
-    // Route::get('/dashboard', [DashboardController::class, 'index']);
+    //Route::get('/dashboard', [DashboardController::class, 'index']);
     Route::controller(CategoryController::class)->group(function(){
         Route::get('/category', 'index');
         Route::get('/category-create', 'create');
@@ -54,9 +59,18 @@ Route::middleware([
         Route::get('/category-delete-{category}', 'delete');
        // Route::get('category/edit/{id}', 'edit');
     });
-    
+    Route::controller(ServiceController::class)->group(function(){
+        Route::get('/service', 'index');
+        Route::get('/service-create', 'create');
+        Route::post('/service-store', 'store');
+        Route::get('/service-edit-{service}', 'edit');
+        Route::put('/service-update-{service}', 'update');
+        Route::get('/service-delete-{service}', 'delete');
+       // Route::get('category/edit/{id}', 'edit');
+    });
 });
 
+Route::get('/admin',[HomeController::class,'admin']);
 Route::get('/redirect',[HomeController::class,'redirect']);
 
 Route::get('/pricing', function () {
