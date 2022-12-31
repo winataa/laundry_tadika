@@ -40,13 +40,21 @@
                     </div>
                 </div>
                 <hr>
+                
                 <div class="row">
                     <div class="col-md-12">
                         <h5>Message</h5><p> {{ $contact->massage }}</p>
                     </div>
                 </div>
-                <br>
                 
+                <hr>
+                <div class="row">
+                    <div class="col-md-12">
+                        <h5>Created Date</h5><p> {{ $contact->created_at }}</p>
+                    </div>
+                </div>
+                <br>
+
 
                 <a href="{{ url('contact-notif')}}" class='btn btn btn-dark'>Back</a>
              
