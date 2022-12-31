@@ -3,7 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\Models\User;
-use App\Models\Contact;
+use App\Models\Category;
+
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
@@ -17,7 +18,12 @@ class HomeController extends Controller
         }else{
             return view('dashboard');
         }
+    
     }
-
+    // if ($usertype=='1'){
+    //     return view('admin.dashboard.dashboard');
+    // }else{
+    //     return view('user.home.profile');
+    // }
 
 }
