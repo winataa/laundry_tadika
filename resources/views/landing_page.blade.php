@@ -51,7 +51,7 @@
                 <a class="nav-link nav-l " href="#" style="color: #0455c0">FAQ</a>
               </li>
               <li class="nav-item mx-0.1">
-                <a class="nav-link nav-l " href="/kontak" style="color: #0455c0">Contact</a>
+                <a class="nav-link nav-l " href="/contact-create" style="color: #0455c0">Contact</a>
               </li>
               <li class="nav-item mx-0.1">
                 <a class="btn btn-primary tombol px-4" style="margin-left: 50px" href="/register">REGIS</a>

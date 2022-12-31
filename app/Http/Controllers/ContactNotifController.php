@@ -2,10 +2,11 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Pengguna;
+use App\Models\Contact;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
-class UserController extends Controller
+class ContactNotifController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,9 +15,24 @@ class UserController extends Controller
      */
     public function index()
     {
-        return view('user.order.index');
+            
+        $contact=Contact::all();
+        return view('admin.notification.index',compact('contact'));
     }
 
+    public function view(Contact $contact)
+    {
+        //dd($id);
+       // $contact=Contact::all();
+        return view('admin.notification.view',compact('contact'));
+    }
+
+    public function delete($id)
+    {
+
+        DB::table('contacts')->where('id', $id)->delete();
+        return redirect('contact-notif')->with('message', 'Notif Delete Succesfully');
+    }
     /**
      * Store a newly created resource in storage.
      *
@@ -31,10 +47,10 @@ class UserController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\Pengguna  $pengguna
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show(Pengguna $pengguna)
+    public function show($id)
     {
         //
     }
@@ -43,10 +59,10 @@ class UserController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\Pengguna  $pengguna
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Pengguna $pengguna)
+    public function update(Request $request, $id)
     {
         //
     }
@@ -54,10 +70,10 @@ class UserController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\Pengguna  $pengguna
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Pengguna $pengguna)
+    public function destroy($id)
     {
         //
     }

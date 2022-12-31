@@ -9,25 +9,39 @@
    </head>
    <body>
     <div class="container">
+      <div class="row">
+         <div class="col-md-12">
+             @if(session()->has('message'))
+             <div class="alert alert-success text-center">{{ session('message') }}
+             </div>
+             @endif
+         </div>
+       </div>
+       {{-- <form class="forms-sample" action="{{ url('contact-store') }}" method="POST" enctype="multipart/form-data">
+         @csrf --}}
         <div class="text">Contact us </div>
-        <form action="#">
+        <form action="{{ url('contact-store') }}" method="POST" enctype="multipart/form-data">
+         @csrf
            <div class="form-row">
               <div class="input-data">
-                 <input type="text" required>
+                 <input type="text" name="first_name" required>
                  <div class="underline"></div>
                  <label for="">First Name</label>
+                 {{-- <input type="text" name="first_name" class="form-control" value="{{ old('name') }}" placeholder="Name"> --}}
               </div>
               <div class="input-data">
-                 <input type="text" required>
+                 <input type="text" name="last_name" required>
                  <div class="underline"></div>
                  <label for="">Last Name</label>
+                 {{-- <input type="text" name="last_name" class="form-control" value="{{ old('name') }}" placeholder="Name"> --}}
               </div>
            </div>
            <div class="form-row">
               <div class="input-data">
-                 <input type="text" required>
+                 <input type="text" name="email" required>
                  <div class="underline"></div>
                  <label for="">Email Address</label>
+                 {{-- <input type="text" name="email" class="form-control" value="{{ old('name') }}" placeholder="Name"> --}}
               </div>
               <!-- <div class="input-data">
                  <input type="text" required>
@@ -37,19 +51,24 @@
            </div>
            <div class="form-row">
               <div class="input-data textarea">
-                 <textarea rows="8" cols="80" required></textarea>
+                 <textarea  name="massage" required></textarea>
                  <br />
                  <div class="underline"></div>
+                 {{-- <input type="text"  name="massage"  required> --}}
                  <label for="">Write your message</label>
                  <br />
-                 <div class="form-row submit-btn">
+                 {{-- <input type="text" name="massage" class="form-control" value="{{ old('name') }}" placeholder="Name"> --}}
+                 {{-- <div class="form-row submit-btn">
                     <div class="input-data">
                        <div class="inner"></div>
                        <input type="submit" value="submit">
                     </div>
-                 </div>
+                 </div> --}}
               </div>
            </div>
+
+           <button type="submit" class="btn btn-primary mr-2">Submit</button>
+           <a href="{{ url('/')}}" class='btn btn-light'>Cancel</a>
         </form>
      </div>
    </body>
