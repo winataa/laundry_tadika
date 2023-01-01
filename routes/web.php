@@ -58,7 +58,7 @@ Route::middleware([
     })->name('dashboard');
     // Route::get('/dashboard', [DashboardAdminController::class, 'index']);
     // Route::get('/dashboard', [DashboardAdminController::class, 'index']);
-    Route::get('/dashboard', [DashboardAdminController::class, 'index']);
+    Route::get('/dashboard-admin', [DashboardAdminController::class, 'index']);
     Route::controller(CategoryController::class)->group(function(){
         Route::get('/category', 'index');
         Route::get('/category-create', 'create');
