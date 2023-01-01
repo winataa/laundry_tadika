@@ -8,6 +8,7 @@ use App\Http\Controllers\ContactController;
 use App\Http\Controllers\ServiceController;
 use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\ContactNotifController;
+use App\Http\Controllers\DashboardAdminController;
 
 /*
 |--------------------------------------------------------------------------
@@ -55,7 +56,9 @@ Route::middleware([
     Route::get('/dashboard', function () {
         return view('admin.dashboardAdmin');
     })->name('dashboard');
-    //Route::get('/dashboard', [DashboardController::class, 'index']);
+    // Route::get('/dashboard', [DashboardAdminController::class, 'index']);
+    // Route::get('/dashboard', [DashboardAdminController::class, 'index']);
+    Route::get('/dashboard', [DashboardAdminController::class, 'index']);
     Route::controller(CategoryController::class)->group(function(){
         Route::get('/category', 'index');
         Route::get('/category-create', 'create');
