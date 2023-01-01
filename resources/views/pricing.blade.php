@@ -10,8 +10,63 @@
         <link rel="stylesheet" href="css/pricing.css">
         <!-- font awesome -->
         <script src="https://kit.fontawesome.com/dbed6b6114.js" crossorigin="anonymous"></script>
+
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+        <!-- CSS Link -->
+        <link rel="stylesheet" href="public/css/style.css">
+
+        <!-- Font Link -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+        
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
+        <!-- Title dan Icon -->
+        <title>Tadika Laundry</title>
+        <link rel="icon" href="img/logo.png" type="image/x-icon">
+
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     </head>
+
     <body>
+        <!-- NavBar -->
+        <div style="width:100%;" data-aos="fade-down">
+            <nav class="navbar navbar-expand-lg navbar-light navigasi" style="width: 100%;">
+                  <div class="container cnav" style="width: 100%;">
+                      <img src="img/logo.png" alt="Bootstrap" width="" height="76">
+                      <a class="navbar-brand nav-b ms-4" style="color: #0455c0" href="#">Tadika Laundry</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                      <ul class="navbar-nav" >
+                        <li class="nav-item nav-i">
+                          <a class="nav-link  nav-l active" aria-current="page" href="/register" style="color: #0455c0">Home</a>
+                        </li>
+                        <li class="nav-item mx-0.1">
+                          <a class="nav-link nav-l " href="#varian" style="color: #0455c0">Service</a>
+                        </li>
+                        <li class="nav-item mx-0.1">
+                          <a class="nav-link nav-l " href="/pricing" style="color: #0455c0">Pricing</a>
+                        </li>
+                        <li class="nav-item mx-0.1">
+                          <a class="nav-link nav-l " href="/faq" style="color: #0455c0">FAQ</a>
+                        </li>
+                        <li class="nav-item mx-0.1">
+                          <a class="nav-link nav-l " href="/contact-create" style="color: #0455c0">Contact</a>
+                        </li>
+                        <li class="nav-item mx-0.1">
+                          <a class="btn btn-primary tombol px-4" style="margin-left: 50px" href="/register">REGIS</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </nav>
+            </div>
+        
 
         <div class = "products">
             <div class = "container">
@@ -26,9 +81,11 @@
                                 <img src = "img/shoe-1.png" alt = "product image">
                             </div>
                             <div class = "product-btns">
+                                <a href="/login">
                                 <button type = "button" class = "btn-cart"> add
                                     <span><i class = "fas fa-plus"></i></span>
                                 </button>
+                                </a>
                                 <button type = "button" class = "btn-buy"> detail
                                     <span><i class = "fas fa-tint"></i></span>
                                 </button>
@@ -38,13 +95,13 @@
                         <div class = "product-info">
                             <div class = "product-info-top">
                                 <h2 class = "sm-title">men's clothing</h2>
-                                <div class = "rating">
+                                <!--<div class = "rating">
                                     <span><i class = "fas fa-star"></i></span>
                                     <span><i class = "fas fa-star"></i></span>
                                     <span><i class = "fas fa-star"></i></span>
                                     <span><i class = "fas fa-star"></i></span>
                                     <span><i class = "far fa-star"></i></span>
-                                </div>
+                                </div>-->
                             </div>
                             <a href = "#" class = "product-name">t-shirt</a>
                             <p class = "product-price-disc">Rp30.000</p>
@@ -63,9 +120,11 @@
                                 <img src = "img/shoe-2.png" alt = "product image">
                             </div>
                             <div class = "product-btns">
-                                <button type = "button" class = "btn-cart"> add
-                                    <span><i class = "fas fa-plus"></i></span>
-                                </button>
+                                <a href="/login">
+                                    <button type = "button" class = "btn-cart"> add
+                                        <span><i class = "fas fa-plus"></i></span>
+                                    </button>
+                                    </a>
                                 <button type = "button" class = "btn-buy"> detail
                                     <span><i class = "fas fa-tint"></i></span>
                                 </button>
@@ -75,13 +134,13 @@
                         <div class = "product-info">
                             <div class = "product-info-top">
                                 <h2 class = "sm-title">men's clothing</h2>
-                                <div class = "rating">
+                                <!--<div class = "rating">
                                     <span><i class = "fas fa-star"></i></span>
                                     <span><i class = "fas fa-star"></i></span>
                                     <span><i class = "fas fa-star"></i></span>
                                     <span><i class = "fas fa-star"></i></span>
                                     <span><i class = "far fa-star"></i></span>
-                                </div>
+                                </div>-->
                             </div>
                             <a href = "#" class = "product-name">safari shirt</a>
                             <br>
@@ -97,9 +156,11 @@
                                 <img src = "img/shoe-3.png" alt = "product image">
                             </div>
                             <div class = "product-btns">
-                                <button type = "button" class = "btn-cart"> add
-                                    <span><i class = "fas fa-plus"></i></span>
-                                </button>
+                                <a href="/login">
+                                    <button type = "button" class = "btn-cart"> add
+                                        <span><i class = "fas fa-plus"></i></span>
+                                    </button>
+                                    </a>
                                 <button type = "button" class = "btn-buy"> detail
                                     <span><i class = "fas fa-tint"></i></span>
                                 </button>
@@ -109,13 +170,13 @@
                         <div class = "product-info">
                             <div class = "product-info-top">
                                 <h2 class = "sm-title">fashion accessories</h2>
-                                <div class = "rating">
+                                <!--<div class = "rating">
                                     <span><i class = "fas fa-star"></i></span>
                                     <span><i class = "fas fa-star"></i></span>
                                     <span><i class = "fas fa-star"></i></span>
                                     <span><i class = "fas fa-star"></i></span>
                                     <span><i class = "far fa-star"></i></span>
-                                </div>
+                                </div>-->
                             </div>
                             <a href = "#" class = "product-name">necktie</a>
                             <br>
@@ -131,9 +192,11 @@
                                 <img src = "img/shoe-4.png" alt = "product image">
                             </div>
                             <div class = "product-btns">
-                                <button type = "button" class = "btn-cart"> add
-                                    <span><i class = "fas fa-plus"></i></span>
-                                </button>
+                                <a href="/login">
+                                    <button type = "button" class = "btn-cart"> add
+                                        <span><i class = "fas fa-plus"></i></span>
+                                    </button>
+                                </a>
                                 <button type = "button" class = "btn-buy"> detail
                                     <span><i class = "fas fa-tint"></i></span>
                                 </button>
@@ -143,13 +206,13 @@
                         <div class = "product-info">
                             <div class = "product-info-top">
                                 <h2 class = "sm-title">men's clothing</h2>
-                                <div class = "rating">
+                                <!--<div class = "rating">
                                     <span><i class = "fas fa-star"></i></span>
                                     <span><i class = "fas fa-star"></i></span>
                                     <span><i class = "fas fa-star"></i></span>
                                     <span><i class = "fas fa-star"></i></span>
                                     <span><i class = "far fa-star"></i></span>
-                                </div>
+                                </div>-->
                             </div>
                             <a href = "#" class = "product-name">men boxer</a>
                             <p class = "product-price-disc">Rp15.000</p>
@@ -168,9 +231,11 @@
                                 <img src = "img/shoe-5.png" alt = "product image">
                             </div>
                             <div class = "product-btns">
-                                <button type = "button" class = "btn-cart"> add
-                                    <span><i class = "fas fa-plus"></i></span>
-                                </button>
+                                <a href="/login">
+                                    <button type = "button" class = "btn-cart"> add
+                                        <span><i class = "fas fa-plus"></i></span>
+                                    </button>
+                                </a>
                                 <button type = "button" class = "btn-buy"> detail
                                     <span><i class = "fas fa-tint"></i></span>
                                 </button>
@@ -180,13 +245,13 @@
                         <div class = "product-info">
                             <div class = "product-info-top">
                                 <h2 class = "sm-title">men's clothing</h2>
-                                <div class = "rating">
+                                <!--<div class = "rating">
                                     <span><i class = "fas fa-star"></i></span>
                                     <span><i class = "fas fa-star"></i></span>
                                     <span><i class = "fas fa-star"></i></span>
                                     <span><i class = "fas fa-star"></i></span>
                                     <span><i class = "far fa-star"></i></span>
-                                </div>
+                                </div>-->
                             </div>
                             <a href = "#" class = "product-name">unisex suit</a>
                             <!-- <p class = "product-price">$ 150.00</p> -->
@@ -202,9 +267,11 @@
                                 <img src = "img/shoe-6.png" alt = "product image">
                             </div>
                             <div class = "product-btns">
-                                <button type = "button" class = "btn-cart"> add
-                                    <span><i class = "fas fa-plus"></i></span>
-                                </button>
+                                <a href="/login">
+                                    <button type = "button" class = "btn-cart"> add
+                                        <span><i class = "fas fa-plus"></i></span>
+                                    </button>
+                                </a>
                                 <button type = "button" class = "btn-buy"> detail
                                     <span><i class = "fas fa-tint"></i></span>
                                 </button>
@@ -214,13 +281,13 @@
                         <div class = "product-info">
                             <div class = "product-info-top">
                                 <h2 class = "sm-title">women's clothing</h2>
-                                <div class = "rating">
+                                <!--<div class = "rating">
                                     <span><i class = "fas fa-star"></i></span>
                                     <span><i class = "fas fa-star"></i></span>
                                     <span><i class = "fas fa-star"></i></span>
                                     <span><i class = "fas fa-star"></i></span>
                                     <span><i class = "far fa-star"></i></span>
-                                </div>
+                                </div>-->
                             </div>
                             <a href = "#" class = "product-name">women underwear</a>
                             <!-- <p class = "product-price">$ 150.00</p> -->
@@ -236,9 +303,11 @@
                                 <img src = "img/shoe-7.png" alt = "product image">
                             </div>
                             <div class = "product-btns">
-                                <button type = "button" class = "btn-cart"> add
-                                    <span><i class = "fas fa-plus"></i></span>
-                                </button>
+                                <a href="/login">
+                                    <button type = "button" class = "btn-cart"> add
+                                        <span><i class = "fas fa-plus"></i></span>
+                                    </button>
+                                </a>
                                 <button type = "button" class = "btn-buy"> detail
                                     <span><i class = "fas fa-tint"></i></span>
                                 </button>
@@ -248,13 +317,13 @@
                         <div class = "product-info">
                             <div class = "product-info-top">
                                 <h2 class = "sm-title">women's clothing</h2>
-                                <div class = "rating">
+                                <!--<div class = "rating">
                                     <span><i class = "fas fa-star"></i></span>
                                     <span><i class = "fas fa-star"></i></span>
                                     <span><i class = "fas fa-star"></i></span>
                                     <span><i class = "fas fa-star"></i></span>
                                     <span><i class = "far fa-star"></i></span>
-                                </div>
+                                </div>-->
                             </div>
                             <a href = "#" class = "product-name">blazer</a>
                             <!-- <p class = "product-price">$ 150.00</p> -->
@@ -270,9 +339,11 @@
                                 <img src = "img/shoe-8.png" alt = "product image">
                             </div>
                             <div class = "product-btns">
-                                <button type = "button" class = "btn-cart"> add
-                                    <span><i class = "fas fa-plus"></i></span>
-                                </button>
+                                <a href="/login">
+                                    <button type = "button" class = "btn-cart"> add
+                                        <span><i class = "fas fa-plus"></i></span>
+                                    </button>
+                                </a>
                                 <button type = "button" class = "btn-buy"> detail
                                     <span><i class = "fas fa-tint"></i></span>
                                 </button>
@@ -282,13 +353,13 @@
                         <div class = "product-info">
                             <div class = "product-info-top">
                                 <h2 class = "sm-title">shower cloth</h2>
-                                <div class = "rating">
+                                <!--<div class = "rating">
                                     <span><i class = "fas fa-star"></i></span>
                                     <span><i class = "fas fa-star"></i></span>
                                     <span><i class = "fas fa-star"></i></span>
                                     <span><i class = "fas fa-star"></i></span>
                                     <span><i class = "far fa-star"></i></span>
-                                </div>
+                                </div>-->
                             </div>
                             <a href = "#" class = "product-name">towel</a>
                             <p class = "product-price-disc">Rp20.000</p>
