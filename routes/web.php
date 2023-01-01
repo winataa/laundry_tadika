@@ -38,7 +38,7 @@ use App\Http\Controllers\DashboardAdminController;
 // });
 
 Route::get('/', function () {
-    return view('dbUser');
+    return view('landing_page');
 });
 Route::get('/user', function () {
     return view('user.order.index');
