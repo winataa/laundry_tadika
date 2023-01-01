@@ -6,23 +6,23 @@
 [ FONT ]*/
 
 @font-face {
-  font-family: Poppins-Regular;
-  src: url('../fonts/poppins/Poppins-Regular.ttf'); 
+  font-family: Inter-Regular;
+  src: url('../fonts/Inter/Inter-Regular.ttf'); 
 }
 
 @font-face {
-  font-family: Poppins-Medium;
-  src: url('../fonts/poppins/Poppins-Medium.ttf'); 
+  font-family: Inter-Medium;
+  src: url('../fonts/Inter/Inter-Medium.ttf'); 
 }
 
 @font-face {
-  font-family: Poppins-Bold;
-  src: url('../fonts/poppins/Poppins-Bold.ttf'); 
+  font-family: Inter-Bold;
+  src: url('../fonts/Inter/Inter-Bold.ttf'); 
 }
 
 @font-face {
-  font-family: Poppins-SemiBold;
-  src: url('../fonts/poppins/Poppins-SemiBold.ttf'); 
+  font-family: Inter-SemiBold;
+  src: url('../fonts/Inter/Inter-SemiBold.ttf'); 
 }
 
 
@@ -39,12 +39,12 @@
 
 body, html {
 	height: 100%;
-	font-family: Poppins-Regular, sans-serif;
+	font-family: Inter, sans-serif;
 }
 
 /*---------------------------------------------*/
 a {
-	font-family: Poppins-Regular;
+	font-family: Inter;
 	font-size: 14px;
 	line-height: 1.7;
 	color: #666666;
@@ -62,6 +62,7 @@ a:focus {
 a:hover {
 	text-decoration: none;
   color: #fff;
+  transition: all 0.3 ease;
 }
 
 /*---------------------------------------------*/
@@ -70,7 +71,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 p {
-	font-family: Poppins-Regular;
+	font-family: Inter;
 	font-size: 14px;
 	line-height: 1.7;
 	color: #666666;
@@ -132,6 +133,8 @@ button {
 
 button:hover {
 	cursor: pointer;
+  transition: 0.5 ease;
+  box-shadow: 0px 16px 50px rgba(0, 0, 0, 0.16);
 }
 
 iframe {
@@ -142,7 +145,7 @@ iframe {
 /*//////////////////////////////////////////////////////////////////
 [ Utility ]*/
 .txt1 {
-  font-family: Poppins-Regular;
+  font-family: Inter-Regular;
   font-size: 13px;
   color: #e5e5e5;
   line-height: 1.5;
@@ -169,6 +172,7 @@ iframe {
   justify-content: center;
   align-items: center;
   padding: 15px;
+  background-color: #0455C0;
 
   background-repeat: no-repeat;
   background-position: center;
@@ -230,7 +234,7 @@ iframe {
 }
 
 .login100-form-title {
-  font-family: Poppins-Medium;
+  font-family: Inter-Medium;
   font-size: 30px;
   color: #fff;
   line-height: 1.2;
@@ -252,7 +256,7 @@ iframe {
 }
 
 .input100 {
-  font-family: Poppins-Regular;
+  font-family: Inter-Regular;
   font-size: 16px;
   color: #fff;
   line-height: 1.2;
@@ -352,7 +356,7 @@ iframe {
 }
 
 .label-checkbox100 {
-  font-family: Poppins-Regular;
+  font-family: Inter-Regular;
   font-size: 13px;
   color: #fff;
   line-height: 1.2;
@@ -409,7 +413,7 @@ iframe {
 }
 
 .login100-form-btn {
-  font-family: Poppins-Medium;
+  font-family: Inter-Medium;
   font-size: 16px;
   color: #555555;
   line-height: 1.2;
@@ -503,7 +507,7 @@ iframe {
   right: 0px;
   pointer-events: none;
 
-  font-family: Poppins-Regular;
+  font-family: Inter-Regular;
   color: #c80000;
   font-size: 13px;
   line-height: 1.4;
