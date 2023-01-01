@@ -10,7 +10,7 @@
     <!-- FontAwesome CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css">
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/faq.css">
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
@@ -29,7 +29,7 @@
     <div class="text-center">
       <h1 class="mt-5 mb-5"><strong>Frequently Asked Questions (FAQ)</strong></h1>
     </div>
-    <img src="faq.png" alt="FAQ Illustration" style="width:450px;width:450px;">
+    <img src="img/faq.png" alt="FAQ Illustration" style="width:450px;width:450px;">
     <section class="container my-5" id="maincontent">
       <section id="accordion">
         <a class="py-3 d-block h-100 w-100 position-relative z-index-1 pr-1 text-secondary border-top" aria-controls="faq-17" aria-expanded="false" data-toggle="collapse" href="#faq-17" role="button">

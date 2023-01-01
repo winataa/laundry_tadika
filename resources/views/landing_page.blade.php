@@ -48,7 +48,7 @@
                 <a class="nav-link nav-l " href="/pricing" style="color: #0455c0">Pricing</a>
               </li>
               <li class="nav-item mx-0.1">
-                <a class="nav-link nav-l " href="#" style="color: #0455c0">FAQ</a>
+                <a class="nav-link nav-l " href="/faq" style="color: #0455c0">FAQ</a>
               </li>
               <li class="nav-item mx-0.1">
                 <a class="nav-link nav-l " href="/contact-create" style="color: #0455c0">Contact</a>

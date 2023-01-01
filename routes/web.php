@@ -113,6 +113,10 @@ Route::get('/pricing', function () {
     return view('pricing');
 });
 
+Route::get('/faq', function () {
+    return view('faq');
+});
+
 // Route::get('/kontak', function () {
 //     return view('kontak');
 // });
