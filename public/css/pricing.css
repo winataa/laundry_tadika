@@ -13,7 +13,7 @@
     box-sizing: border-box;
 }
 body{
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Inter', sans-serif;
 }
 
 /* Utility stylings */
@@ -28,20 +28,21 @@ img{
 .lg-title,
 .md-title,
 .sm-title{
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Inter', sans-serif;
     padding: 0.6rem 0;
     text-transform: capitalize;
 }
 .lg-title{
     font-size: 2.5rem;
-    font-weight: 500;
+    font-weight: 600;
+    color:rgb(4, 85, 192);
     text-align: center;
     padding: 1.3rem 0;
     opacity: 0.9;
 }
 .md-title{
     font-size: 2rem;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Inter', sans-serif;
 }
 .sm-title{
     font-weight: 300;

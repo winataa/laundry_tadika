@@ -9,9 +9,9 @@
 .text-why {
     color: #164772;
     font-weight: bold;
-    font-size: 40px;
-    margin-top: 70px;
-    padding-top: 100px;
+    font-size: 50px;
+    margin-top: 50px;
+    padding-top: 50px;
 }
 
 .container-why {
@@ -71,7 +71,7 @@
 }
 
 .tombol3 {
-    border-radius: 26.5px;
+    border-radius: 50px;
     background-color: #164772;
     border: 1px solid #164772;
     box-shadow: 0 16px 22px -17px #03153b;

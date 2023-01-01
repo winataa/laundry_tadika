@@ -1,3 +1,5 @@
+{{--@extends ('landing.templateNav')
+@section ('page-heading')--}}
 <!DOCTYPE html>
 <html>
     <head>
@@ -13,8 +15,8 @@
 
         <div class = "products">
             <div class = "container">
-                <h1 class = "lg-title">TadikaLaundry Pricing</h1>
-                <p class = "text-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur quos sit consectetur, ipsa voluptatem vitae necessitatibus dicta veniam, optio, possimus assumenda laudantium. Temporibus, quis cum.</p>
+                <h1 class = "lg-title">Our Pricing</h1>
+                <p class = "text-light">Every sheets of yours will be shown here. Check the price now and order immediately.</p>
 
                 <div class = "product-items">
                     <!-- single product 1 -->
@@ -24,10 +26,10 @@
                                 <img src = "img/shoe-1.png" alt = "product image">
                             </div>
                             <div class = "product-btns">
-                                <button type = "button" class = "btn-cart"> keranjang
+                                <button type = "button" class = "btn-cart"> add
                                     <span><i class = "fas fa-plus"></i></span>
                                 </button>
-                                <button type = "button" class = "btn-buy"> cuci
+                                <button type = "button" class = "btn-buy"> detail
                                     <span><i class = "fas fa-tint"></i></span>
                                 </button>
                             </div>
@@ -35,7 +37,7 @@
 
                         <div class = "product-info">
                             <div class = "product-info-top">
-                                <h2 class = "sm-title">atasan pria</h2>
+                                <h2 class = "sm-title">men's clothing</h2>
                                 <div class = "rating">
                                     <span><i class = "fas fa-star"></i></span>
                                     <span><i class = "fas fa-star"></i></span>
@@ -44,7 +46,7 @@
                                     <span><i class = "far fa-star"></i></span>
                                 </div>
                             </div>
-                            <a href = "#" class = "product-name">baju kaos</a>
+                            <a href = "#" class = "product-name">t-shirt</a>
                             <p class = "product-price-disc">Rp30.000</p>
                             <p class = "product-price">Rp22.000</p>
                         </div>
@@ -61,10 +63,10 @@
                                 <img src = "img/shoe-2.png" alt = "product image">
                             </div>
                             <div class = "product-btns">
-                                <button type = "button" class = "btn-cart"> keranjang
+                                <button type = "button" class = "btn-cart"> add
                                     <span><i class = "fas fa-plus"></i></span>
                                 </button>
-                                <button type = "button" class = "btn-buy"> cuci
+                                <button type = "button" class = "btn-buy"> detail
                                     <span><i class = "fas fa-tint"></i></span>
                                 </button>
                             </div>
@@ -72,7 +74,7 @@
 
                         <div class = "product-info">
                             <div class = "product-info-top">
-                                <h2 class = "sm-title">atasan pria</h2>
+                                <h2 class = "sm-title">men's clothing</h2>
                                 <div class = "rating">
                                     <span><i class = "fas fa-star"></i></span>
                                     <span><i class = "fas fa-star"></i></span>
@@ -81,7 +83,7 @@
                                     <span><i class = "far fa-star"></i></span>
                                 </div>
                             </div>
-                            <a href = "#" class = "product-name">kemeja safari</a>
+                            <a href = "#" class = "product-name">safari shirt</a>
                             <br>
                             <!-- <p class = "product-price">Rp40.000</p> -->
                             <p class = "product-price">Rp30.000</p>
@@ -95,10 +97,10 @@
                                 <img src = "img/shoe-3.png" alt = "product image">
                             </div>
                             <div class = "product-btns">
-                                <button type = "button" class = "btn-cart"> keranjang
+                                <button type = "button" class = "btn-cart"> add
                                     <span><i class = "fas fa-plus"></i></span>
                                 </button>
-                                <button type = "button" class = "btn-buy"> cuci
+                                <button type = "button" class = "btn-buy"> detail
                                     <span><i class = "fas fa-tint"></i></span>
                                 </button>
                             </div>
@@ -106,7 +108,7 @@
 
                         <div class = "product-info">
                             <div class = "product-info-top">
-                                <h2 class = "sm-title">aksesoris pria</h2>
+                                <h2 class = "sm-title">fashion accessories</h2>
                                 <div class = "rating">
                                     <span><i class = "fas fa-star"></i></span>
                                     <span><i class = "fas fa-star"></i></span>
@@ -115,7 +117,7 @@
                                     <span><i class = "far fa-star"></i></span>
                                 </div>
                             </div>
-                            <a href = "#" class = "product-name">dasi kantor</a>
+                            <a href = "#" class = "product-name">necktie</a>
                             <br>
                             <!-- <p class = "product-price">Rp30.000</p> -->
                             <p class = "product-price">Rp22.000</p>
@@ -129,10 +131,10 @@
                                 <img src = "img/shoe-4.png" alt = "product image">
                             </div>
                             <div class = "product-btns">
-                                <button type = "button" class = "btn-cart"> keranjang
+                                <button type = "button" class = "btn-cart"> add
                                     <span><i class = "fas fa-plus"></i></span>
                                 </button>
-                                <button type = "button" class = "btn-buy"> cuci
+                                <button type = "button" class = "btn-buy"> detail
                                     <span><i class = "fas fa-tint"></i></span>
                                 </button>
                             </div>
@@ -140,7 +142,7 @@
 
                         <div class = "product-info">
                             <div class = "product-info-top">
-                                <h2 class = "sm-title">bawahan pria</h2>
+                                <h2 class = "sm-title">men's clothing</h2>
                                 <div class = "rating">
                                     <span><i class = "fas fa-star"></i></span>
                                     <span><i class = "fas fa-star"></i></span>
@@ -149,7 +151,7 @@
                                     <span><i class = "far fa-star"></i></span>
                                 </div>
                             </div>
-                            <a href = "#" class = "product-name">boxer pria</a>
+                            <a href = "#" class = "product-name">men boxer</a>
                             <p class = "product-price-disc">Rp15.000</p>
                             <p class = "product-price">Rp10.000</p>
                         </div>
@@ -166,10 +168,10 @@
                                 <img src = "img/shoe-5.png" alt = "product image">
                             </div>
                             <div class = "product-btns">
-                                <button type = "button" class = "btn-cart"> keranjang
+                                <button type = "button" class = "btn-cart"> add
                                     <span><i class = "fas fa-plus"></i></span>
                                 </button>
-                                <button type = "button" class = "btn-buy"> cuci
+                                <button type = "button" class = "btn-buy"> detail
                                     <span><i class = "fas fa-tint"></i></span>
                                 </button>
                             </div>
@@ -177,7 +179,7 @@
 
                         <div class = "product-info">
                             <div class = "product-info-top">
-                                <h2 class = "sm-title">atasan pria</h2>
+                                <h2 class = "sm-title">men's clothing</h2>
                                 <div class = "rating">
                                     <span><i class = "fas fa-star"></i></span>
                                     <span><i class = "fas fa-star"></i></span>
@@ -186,7 +188,7 @@
                                     <span><i class = "far fa-star"></i></span>
                                 </div>
                             </div>
-                            <a href = "#" class = "product-name">jas unisex</a>
+                            <a href = "#" class = "product-name">unisex suit</a>
                             <!-- <p class = "product-price">$ 150.00</p> -->
                             <br>
                             <p class = "product-price">Rp27.000</p>
@@ -200,10 +202,10 @@
                                 <img src = "img/shoe-6.png" alt = "product image">
                             </div>
                             <div class = "product-btns">
-                                <button type = "button" class = "btn-cart"> keranjang
+                                <button type = "button" class = "btn-cart"> add
                                     <span><i class = "fas fa-plus"></i></span>
                                 </button>
-                                <button type = "button" class = "btn-buy"> cuci
+                                <button type = "button" class = "btn-buy"> detail
                                     <span><i class = "fas fa-tint"></i></span>
                                 </button>
                             </div>
@@ -211,7 +213,7 @@
 
                         <div class = "product-info">
                             <div class = "product-info-top">
-                                <h2 class = "sm-title">bawahan wanita</h2>
+                                <h2 class = "sm-title">women's clothing</h2>
                                 <div class = "rating">
                                     <span><i class = "fas fa-star"></i></span>
                                     <span><i class = "fas fa-star"></i></span>
@@ -220,7 +222,7 @@
                                     <span><i class = "far fa-star"></i></span>
                                 </div>
                             </div>
-                            <a href = "#" class = "product-name">dalaman wanita</a>
+                            <a href = "#" class = "product-name">women underwear</a>
                             <!-- <p class = "product-price">$ 150.00</p> -->
                             <br>
                             <p class = "product-price">Rp10.000</p>
@@ -234,10 +236,10 @@
                                 <img src = "img/shoe-7.png" alt = "product image">
                             </div>
                             <div class = "product-btns">
-                                <button type = "button" class = "btn-cart"> keranjang
+                                <button type = "button" class = "btn-cart"> add
                                     <span><i class = "fas fa-plus"></i></span>
                                 </button>
-                                <button type = "button" class = "btn-buy"> cuci
+                                <button type = "button" class = "btn-buy"> detail
                                     <span><i class = "fas fa-tint"></i></span>
                                 </button>
                             </div>
@@ -245,7 +247,7 @@
 
                         <div class = "product-info">
                             <div class = "product-info-top">
-                                <h2 class = "sm-title">atasan wanita</h2>
+                                <h2 class = "sm-title">women's clothing</h2>
                                 <div class = "rating">
                                     <span><i class = "fas fa-star"></i></span>
                                     <span><i class = "fas fa-star"></i></span>
@@ -268,10 +270,10 @@
                                 <img src = "img/shoe-8.png" alt = "product image">
                             </div>
                             <div class = "product-btns">
-                                <button type = "button" class = "btn-cart"> keranjang
+                                <button type = "button" class = "btn-cart"> add
                                     <span><i class = "fas fa-plus"></i></span>
                                 </button>
-                                <button type = "button" class = "btn-buy"> cuci
+                                <button type = "button" class = "btn-buy"> detail
                                     <span><i class = "fas fa-tint"></i></span>
                                 </button>
                             </div>
@@ -279,7 +281,7 @@
 
                         <div class = "product-info">
                             <div class = "product-info-top">
-                                <h2 class = "sm-title">aksesoris mandi</h2>
+                                <h2 class = "sm-title">shower cloth</h2>
                                 <div class = "rating">
                                     <span><i class = "fas fa-star"></i></span>
                                     <span><i class = "fas fa-star"></i></span>
@@ -288,7 +290,7 @@
                                     <span><i class = "far fa-star"></i></span>
                                 </div>
                             </div>
-                            <a href = "#" class = "product-name">handuk mandi</a>
+                            <a href = "#" class = "product-name">towel</a>
                             <p class = "product-price-disc">Rp20.000</p>
                             <p class = "product-price">Rp10.000</p>
                         </div>
@@ -302,6 +304,7 @@
             </div>
         </div>
 
+        {{--
         <div class = "product-collection">
             <div class = "container">
                 <div class = "product-collection-wrapper">
@@ -309,9 +312,9 @@
                     <div class = "product-col-left flex">
                         <div class = "product-col-content">
                             <h2 class = "sm-title">atasan </h2>
-                            <h2 class = "md-title">atasan pria </h2>
+                            <h2 class = "md-title">men's clothing </h2>
                             <p class = "text-light">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae consequatur facilis eligendi quibusdam voluptatibus exercitationem autem voluptatum, beatae architecto odit, quisquam repellat. Deleniti, architecto ab.</p>
-                            <button type = "button" class = "btn-dark">Cuci sekarang</button>
+                            <button type = "button" class = "btn-dark">detail sekarang</button>
                         </div>
                     </div>
 
@@ -322,7 +325,7 @@
                                 <h2 class = "sm-title">aksesoris </h2>
                                 <h2 class = "md-title">aksesoris wanita </h2>
                                 <p class = "text-light">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae consequatur facilis eligendi quibusdam voluptatibus exercitationem autem voluptatum, beatae architecto odit, quisquam repellat. Deleniti, architecto ab.</p>
-                                <button type = "button" class = "btn-dark">Cuci sekarang</button>
+                                <button type = "button" class = "btn-dark">detail sekarang</button>
                             </div>
                         </div>
 
@@ -333,7 +336,7 @@
                                     <h2 class = "sm-title">UAS sale </h2>
                                     <h2 class = "md-title">Extra 30% Off </h2>
                                     <p class = "text-light">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae consequatur facilis eligendi quibusdam voluptatibus exercitationem autem voluptatum, beatae architecto odit, quisquam repellat. Deleniti, architecto ab.</p>
-                                    <button type = "button" class = "btn-dark">Cuci sekarang</button>
+                                    <button type = "button" class = "btn-dark">detail sekarang</button>
                                 </div>
                             </div>
                             <!-- right -->
@@ -342,14 +345,15 @@
                                     <h2 class = "sm-title">shoes </h2>
                                     <h2 class = "md-title">best sellers </h2>
                                     <p class = "text-light">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae consequatur facilis eligendi quibusdam voluptatibus exercitationem autem voluptatum, beatae architecto odit, quisquam repellat. Deleniti, architecto ab.</p>
-                                    <button type = "button" class = "btn-dark">Cuci sekarang</button>
+                                    <button type = "button" class = "btn-dark">detail sekarang</button>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </div> --}}
         
     </body>
 </html>
+{{--@endsection--}}
