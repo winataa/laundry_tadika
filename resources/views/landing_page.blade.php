@@ -296,7 +296,7 @@
     
         <center>
         <button class="floating-btn tombol3" data-aos="fade-down"  >
-        <a style="text-decoration:none"  class="" href="#testi1" style="color:white">See More Who Trust Us 
+        <a style="text-decoration:none;color:white"  class="" href="#testi1" style="color:white">See More Who Trust Us 
         </button>
         </center>
 
