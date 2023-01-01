@@ -89,8 +89,10 @@
 .tombol3:hover {
     background-color: #96b9d9;
     color: #164772;
+    transition: all 0.3s ease;
 }
 
 .tombol3:focus {
     outline: none;
+    transition: all 0.3s ease;
 }
