@@ -37,7 +37,7 @@ use App\Http\Controllers\ContactNotifController;
 // });
 
 Route::get('/', function () {
-    return view('landing_page');
+    return view('dbUser');
 });
 Route::get('/user', function () {
     return view('user.order.index');
