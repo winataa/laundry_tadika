@@ -1,0 +1,59 @@
+.text-secondary {
+  color: #0455C0;
+}
+
+.h4,
+h4 {
+  font-family: Inter, sans-serif;
+  font-size: 1.2rem;
+}
+
+h1 {
+  font-family: Inter, sans-serif;
+  color: #0455C0;
+  font-weight: 10000;
+}
+
+h2 {
+  font-family: Inter, sans-serif;
+  color: #0455C0;
+  font-weight: 500;
+}
+
+.fa,
+.fas {
+  font-family: 'FontAwesome';
+  font-weight: 500;
+  font-size: 1.2rem;
+  font-style: normal;
+}
+
+.right-0 {
+  right: 0;
+}
+
+.top-0 {
+  top: 0;
+}
+
+.h-100 {
+  height: 100%;
+}
+
+a.text-secondary:focus,
+a.text-secondary:hover {
+  text-decoration: none;
+  color: #0455C0;
+}
+
+#accordion .fa-plus {
+  transition: -webkit-transform 0.25s ease-in-out;
+  transition: transform 0.25s ease-in-out;
+  transition: transform 0.25s ease-in-out, -webkit-transform 0.25s ease-in-out;
+  color: #0455C0;
+}
+
+#accordion a[aria-expanded=true] .fa-plus {
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
