@@ -56,6 +56,8 @@ Route::middleware([
     Route::get('/dashboard', function () {
         return view('admin.dashboardAdmin');
     })->name('dashboard');
+    // Route::get('/dashboard', [DashboardAdminController::class, 'index']);
+    // Route::get('/dashboard', [DashboardAdminController::class, 'index']);
     Route::get('/dashboard', [DashboardAdminController::class, 'index']);
     Route::controller(CategoryController::class)->group(function(){
         Route::get('/category', 'index');
