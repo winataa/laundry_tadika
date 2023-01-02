@@ -93,7 +93,7 @@
                     Log in
                 </span>
                                     <div class="wrap-input100 validate-input" data-validate = "Enter username">
-                                        <label for="email">{{ __('Email Address') }}</label>
+                                        <label class="label_atas"for="email">{{ __('Email Address') }}</label>
                     
                                         <div>
                                             <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
@@ -114,7 +114,7 @@
                     
                                     
                                     <div class="wrap-input100 validate-input" >
-                                        <label for="password" >{{ __('Password') }}</label>
+                                        <label class="label_atas" for="password" >{{ __('Password') }}</label>
                     
                                         <div>
                                             <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="current-password">
@@ -176,8 +176,9 @@
                     
                                         <div>
                                             @if (Route::has('register'))
-                                            <li class="nav-item">
-                                                <a class="nav-link" href="{{ route('register') }}">Nggk punya lho?</a>
+                                            <li class="nav-item" style="text-align: center">
+                                                <p>Don't Have Any Account?</p>
+                                                <a class="nav-link" href="{{ route('register') }}">Sign Up Now!</a>
                                             </li>
                                         @endif
                                         </div>

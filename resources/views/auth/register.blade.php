@@ -114,7 +114,7 @@
             
 
             <div class="input-group">
-                <label for="name" class="col-md-4 col-form-label text-md-end">{{ __('Name') }}</label>
+                {{-- <label for="name" class="col-md-4 col-form-label text-md-end">{{ __('Name') }}</label> --}}
               <i class="fas fa-user"></i>
               {{-- <input type="text" placeholder="Full Name" name="name" /> --}}
               <input id="name" placeholder="Full Name" type="text" class="form-control @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" required autocomplete="name" autofocus>
@@ -136,7 +136,7 @@
           
 
             <div class="input-group">
-  <label for="email" class="col-md-4 col-form-label text-md-end">{{ __('Email Address') }}</label>
+  {{-- <label for="email" class="col-md-4 col-form-label text-md-end">{{ __('Email Address') }}</label> --}}
               <i class="fas fa-envelope"></i>
               {{-- <input type="email" placeholder="Email" name="email" /> --}}
               <input id="email" type="email"  placeholder="Email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email">
@@ -166,7 +166,7 @@
              
 
             <div class="input-group">
-                 <label for="password" class="col-md-4 col-form-label text-md-end">{{ __('Password') }}</label>
+                 {{-- <label for="password" class="col-md-4 col-form-label text-md-end">{{ __('Password') }}</label> --}}
               <i class="fas fa-lock"></i>            
                 <input id="password" type="password" class="@error('password') is-invalid @enderror" placeholder="Password"  name="password" required autocomplete="new-password">
                 @error('password')
@@ -191,14 +191,17 @@
                 </div>
             </div> --}}
 
-            <div class="row mb-3">
-                
-                <label for="password-confirm" class="col-md-4 col-form-label text-md-end">{{ __('Confirm Password') }}</label>
+
+            <div class="input-group">
+                {{-- <label for="password" class="col-md-4 col-form-label text-md-end">{{ __('Password') }}</label> --}}
+             <i class="fas fa-lock"></i>
+                {{-- <label for="password-confirm" class="col-md-4 col-form-label text-md-end">{{ __('Confirm Password') }}</label> --}}
 
                 <div class="col-md-6">
-                    <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required autocomplete="new-password">
+                    <input id="password-confirm" type="password" class="form-control" name="password_confirmation" placeholder="Confirm Password" required autocomplete="new-password">
                 </div>
             </div>
+
 
 
             <!--kalo tamu udah ada akun, ke page login-->
