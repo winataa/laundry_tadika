@@ -113,15 +113,21 @@
                   <i class="ti-settings text-primary"></i>
                   Settings
                 </a>
-                <a class="dropdown-item">
-                  <i class="ti-power-off text-primary"></i>
-                  Logout
-                </a>
+            
+                  <a class="dropdown-item" href="{{ route('logout') }}"
+                  onclick="event.preventDefault();
+                                document.getElementById('logout-form').submit();">
+                                <i class="ti-power-off text-primary"></i>
+                  {{ __('Logout') }}
+              </a>
+              <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                @csrf
+            </form>
               </div>
             </li>
             <li class="nav-item nav-settings d-none d-lg-flex">
               <a class="nav-link" href="#">
-                <i class="icon-ellipsis"></i>
+                <i class="icon-ellipsis"></i> 
               </a>
             </li>
           </ul>
@@ -356,6 +362,11 @@
 
 
       <div class="content-wrapper">
+        @if (session('status'))
+        <div class="alert alert-success" role="alert">
+            {{ session('status') }}
+        </div>
+    @endif
         @yield('page-heading')
         @yield('content')
         @yield('page-heading2')
