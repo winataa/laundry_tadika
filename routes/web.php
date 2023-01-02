@@ -1,7 +1,8 @@
 <?php
 
-use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Auth;
 
+use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\ContactController;
@@ -40,12 +41,15 @@ use App\Http\Controllers\DashboardAdminController;
 Route::get('/', function () {
     return view('dbUser');
 });
+// Route::get('/', function () {
+//     return view('welcome');
+// });
 Route::get('/user', function () {
     return view('user.order.index');
 });
 
-Route::get('/we', function () {
-    return view('admin.dashboardAdmin');
+Route::get('/loginn', function () {
+    return view('loginn');
 });
 
 Route::middleware([
@@ -109,8 +113,8 @@ Route::controller(ContactNotifController::class)->group(function(){
     // Route::get('category/edit/{id}', 'edit');
  });
 //Route::get('/contact',[ContactController::class,'index']);
-Route::get('/admin',[HomeController::class,'admin']);
-Route::get('/redirect',[HomeController::class,'redirect']);
+// Route::get('/admin',[HomeController::class,'admin']);
+// Route::get('/redirect',[HomeController::class,'redirect']);
 
 Route::get('/pricing', function () {
     return view('pricing');
@@ -136,3 +140,42 @@ Route::get('/create', function () {
     return view('admin.category.create');;
 });
 
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+// Auth::routes();
+
+// Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Route::middleware('auth', 'isAdmin')->group(function(){
+    Route::get('dashboard', [App\Http\Controllers\DashboardAdminController::class, 'index']);
+
+    // Route::get('category', [App\Http\Controllers\Admin\CategoryController::class, 'index']);
+    // Route::get('category/create', [App\Http\Controllers\Admin\CategoryController::class, 'create']);
+    // Route::post('category-store', [App\Http\Controllers\Admin\CategoryController::class, 'store']);
+        Route::controller(CategoryController::class)->group(function(){
+            Route::get('/category', 'index');
+            Route::get('/category-create', 'create');
+            Route::post('/category-store', 'store');
+            Route::get('/category-edit-{category}', 'edit');
+            Route::put('/category-update-{category}', 'update');
+            Route::get('/category-delete-{category}', 'delete');
+           // Route::get('category/edit/{id}', 'edit');
+        });
+        Route::controller(ServiceController::class)->group(function(){
+            Route::get('/service', 'index');
+            Route::get('/service-create', 'create');
+            Route::post('/service-store', 'store');
+            Route::get('/service-edit-{service}', 'edit');
+            Route::put('/service-update-{service}', 'update');
+            Route::get('/service-delete-{service}', 'delete');
+           // Route::get('category/edit/{id}', 'edit');
+        });
+
+});
+
+Route::get('/dashboard-user', function () {
+    return view('user.home.profile');;
+});

@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Transparent Login Form UI</title>
-    <link rel="stylesheet" href="public/css/login.css">
+    <link rel="stylesheet" href="css/login.css">
    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
   </head>
   <body>
