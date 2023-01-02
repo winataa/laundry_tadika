@@ -1,0 +1,121 @@
+.auto-group-darh-Wd9 {
+    background-color: #0455c0;
+    border-radius: 2rem;
+    box-shadow: 0 2.4rem 3.6rem rgba(4, 85, 192, 0.2399999946);
+    flex-shrink: 0;
+    height: 30%;
+    margin-right: 2.3rem;
+    position: relative;
+    width: 20rem;
+}
+    .item-70-Faj {
+      /* align-items: center;
+      color: #ffffff;
+      display: flex;
+      font-family: Inter, 'Source Sans Pro';
+      font-size: 1.3rem;
+      font-weight: 700;
+      height: 6.5rem; */
+      /* justify-content: center; */
+      /* left: 15.05rem; */
+      line-height: 1.2125;
+      position: absolute;
+      top: 2.2rem;
+      white-space: nowrap;
+      width: 6.8rem; 
+    }
+    .total-orders-88j {
+      align-items: center;
+      color: #ffffff;
+      display: flex;
+      font-family: Inter, 'Source Sans Pro';
+      font-size: 1.4rem;
+      font-weight: 100;
+      height: 3rem;
+      justify-content: right;
+      margin-right: 1.4rem;
+       /* left: 14.4rem;
+      line-height: 1.2125;
+      position: absolute;
+      top: 3.45rem;
+      white-space: nowrap;
+      width: 14.6rem;  */
+    }
+    .auto-group-bscb-BMu {
+        background-color: #4a9be6;
+        border-radius: 2rem;
+        box-shadow: 0 2.4rem 3.6rem rgba(4, 85, 192, 0.2399999946);
+        flex-shrink: 0;
+        height: 30%;
+        position: relative;
+        width: 20rem;
+    }
+        .total-customers-8Y3 {
+          align-items: center;
+          color: #ffffff;
+          display: flex;
+          font-family: Inter, 'Source Sans Pro';
+          font-size: 1.4rem;
+          font-weight: 700;
+          height: 3rem;
+          justify-content: center;
+          /* left: 13.4rem;
+          line-height: 1.2125;
+          position: absolute;
+          top: 3.45rem;
+          white-space: nowrap;
+          width: 19.5rem; */
+        }
+        .item-65-S2w {
+          align-items: center;
+          color: #ffffff;
+          display: flex;
+          font-family: Inter, 'Source Sans Pro';
+          font-size: 1.4rem;
+          font-weight: 700;
+          height: 6.5rem;
+          justify-content: center;
+          /* left: 13.95rem;
+          line-height: 1.2125;
+          position: absolute;
+          top: 6.2rem;
+          white-space: nowrap;
+          width: 7rem; */
+        }
+        .welcome-to-dashboard-UgT {
+            align-items: center;
+            color: #838fa7;
+            display: flex;
+            flex-shrink: 0;
+            font-family: Inter, 'Source Sans Pro';
+            font-size: 1rem;
+            font-weight: 500;
+            /* justify-content: center; */
+            line-height: 1.5;
+            margin-bottom: 4rem;
+            white-space: nowrap;
+            width: 100%;
+          }
+
+          .line-6-HJT {
+            background-color: #0455c0;
+            flex-shrink: 0;
+            height: 0.3rem;
+            margin: 0rem 0.001rem 1.45rem 0rem;
+            width: calc(100% - 0.0009rem);
+          }
+          .recent-activities-yh5 {
+            align-items: center;
+            color: #0455c0;
+            display: flex;
+            flex-shrink: 0;
+            font-family: Inter, 'Source Sans Pro';
+            font-size: 2rem;
+            font-weight: 700;
+            /* justify-content: center; */
+            line-height: 1.2125;
+            white-space: nowrap;
+            width: 100%;
+          }
+          
+      
