@@ -120,9 +120,9 @@ Route::get('/faq', function () {
     return view('faq');
 });
 
-// Route::get('/kontak', function () {
+//Route::get('/kontak', function () {
 //     return view('kontak');
-// });
+//});
 
 // Route::get('/regis', function () {
 //     return view('register');

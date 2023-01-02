@@ -35,7 +35,7 @@
 				<form class="login100-form validate-form">
 					<span class="login100-form-logo">
 						<i class="logo_tadika">
-							<img src="img/Frame.png" alt="tadika logo" style="width: 80px;">
+							<img src="img/logo.png" alt="tadika logo" style="width: 80px;">
 						</i>
 					</span>
 
