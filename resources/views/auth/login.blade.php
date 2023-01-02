@@ -177,7 +177,7 @@
                                         <div>
                                             @if (Route::has('register'))
                                             <li class="nav-item">
-                                                <a class="nav-link" href="{{ route('register') }}">Don't Have Account?</a>
+                                                <a class="nav-link" href="{{ route('register') }}">Nggk punya lho?</a>
                                             </li>
                                         @endif
                                         </div>

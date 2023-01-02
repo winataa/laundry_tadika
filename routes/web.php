@@ -48,8 +48,8 @@ Route::get('/user', function () {
     return view('user.order.index');
 });
 
-Route::get('/we', function () {
-    return view('admin.dashboardAdmin');
+Route::get('/loginn', function () {
+    return view('loginn');
 });
 
 Route::middleware([
@@ -113,8 +113,8 @@ Route::controller(ContactNotifController::class)->group(function(){
     // Route::get('category/edit/{id}', 'edit');
  });
 //Route::get('/contact',[ContactController::class,'index']);
-Route::get('/admin',[HomeController::class,'admin']);
-Route::get('/redirect',[HomeController::class,'redirect']);
+// Route::get('/admin',[HomeController::class,'admin']);
+// Route::get('/redirect',[HomeController::class,'redirect']);
 
 Route::get('/pricing', function () {
     return view('pricing');
