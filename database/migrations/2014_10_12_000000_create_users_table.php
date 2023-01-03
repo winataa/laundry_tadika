@@ -26,6 +26,22 @@ return new class extends Migration
             $table->foreignId('current_team_id')->nullable();
             $table->string('profile_photo_path', 2048)->nullable();
             $table->timestamps();
+            // $table->id();
+            // $table->string('name');
+            // $table->string('email')->unique();
+            // $table->string('usertype')->default(0);
+            // $table->string('phone')->nullable();
+            // $table->integer('room')->nullable();
+            // $table->string('street')->nullable();
+            // $table->string('city')->nullable();
+            // $table->string('state')->nullable();
+            // $table->string('zip')->nullable();
+            // $table->timestamp('email_verified_at')->nullable();
+            // $table->string('password');
+            // $table->rememberToken();
+            // $table->foreignId('current_team_id')->nullable();
+            // $table->string('profile_photo_path', 2048)->nullable();
+            // $table->timestamps();
         });
     }
 

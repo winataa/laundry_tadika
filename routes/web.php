@@ -144,8 +144,12 @@ Route::get('/create', function () {
 Auth::routes();
 
 Route::get('/abal', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'profile'])->name('profile');
-
+// Route::get('/home', [App\Http\Controllers\HomeController::class, 'profile'])->name('profile');
+Route::controller(HomeController::class)->group(function(){;
+    Route::get('/home', 'profile');
+    Route::post('/user-update', 'update');
+   // Route::get('category/edit/{id}', 'edit');
+});
 // Auth::routes();
 
 // Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
