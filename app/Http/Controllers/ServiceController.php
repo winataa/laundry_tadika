@@ -190,7 +190,7 @@ class ServiceController extends Controller
                 }
             $service->save();
 
-        return redirect('service')->with('message', 'Category Update Succesfully');
+        return redirect('service')->with('message', 'Service Update Succesfully');
     }
 
     public function edit(Service $service)
@@ -205,7 +205,7 @@ class ServiceController extends Controller
     public function delete($service_id)
     {
         DB::table('services')->where('service_id', $service_id)->delete();
-        return redirect('service')->with('message', 'Category Added Succesfully');
+        return redirect('service')->with('message', 'Service Delete Succesfully');
     }
 
     // public function delete($id)

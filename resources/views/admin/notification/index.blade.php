@@ -1,19 +1,23 @@
 @extends('admin.layout.templateAdmin')
 
 @section('page-heading')
-<div class="justify-content-between mb-4">
+{{-- <div class="justify-content-between mb-4">
     <h1 class="h1 mb-0 text-gray-800 mb-4 ">Notification</h1>
     {{-- <a href="{{ url('category-create') }}" class="btn btn-primary">Add Category</a> <br> --}}
 
-</div>
+{{-- </div> --}}
 @endsection
 
 @section('content')
+
 <div class="row">
   <div class="col-lg-12 grid-margin stretch-card">
     <div class="card">
         <div class="card-body">
               <div class="row">
+                <div class="justify-content-between mb-4">
+                  <h1 class="h1 text-gray-800 mb-4 ml-3">Notification of Tadika Laundry</h1>
+                </div>
                 <div class="col-md-12">
                     @if(session()->has('message'))
                     <div class="alert alert-success text-center">{{ session('message') }}
@@ -24,7 +28,7 @@
 
               {{-- <div class="flash-data" data-flashdata={{ $this->session->flashdata('flash') }}></div> --}}
             <br>
-            <h4 class="card-title">Notification from Tadika Laundry Contact</h4>
+            {{-- <h4 class="card-title">Notification from Tadika Laundry Contact</h4> --}}
             <div class="table-responsive"> 
               <table class="table table-striped" class="display nowrap">
             <thead>

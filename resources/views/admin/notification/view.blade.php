@@ -1,53 +1,47 @@
 @extends('admin.layout.templateAdmin')
 
 @section('page-heading2')
-<div class="justify-content-between mb-4">
+{{-- <div class="justify-content-between mb-4">
     <h1 class="h1 mb-0 text-gray-800 mb-4 ">View Contact Notification</h1>
-</div>
+</div> --}}
 @endsection
 
 @section('content2')
 <div class="row">
-    <div class="col-12 grid-margin stretch-card">
-        <div class="card">
-            <div class="card-body">
-                {{-- @if ($errors->any())
-                <div class="alert alert-danger">
-                    <ul>
-                        @foreach ($errors->all() as $error)
-                            <li>{{ $error }}</li>
-                        @endforeach
-                    </ul>
+    <div class="col-10 grid-margin stretch-card">
+        <div class="card" >
+            <div class="card-body" >
+                <div class="justify-content-between mb-4">
+                    <center><h1 class="h1 mb-0 text-gray-800 mb-4 ">View Contact Notification</h1>
+                    </center>
                 </div>
-            @endif --}}
-                {{-- <h4 class="card-title">Category of Tadika Laundry</h4> --}}
-
-
-
-                <div class="row">
-                    <div class="col-md-6">
+                <hr style="width:50%"><br><br>
+                <div class="row ">
+                    <div class="col-md-4 ">
                         <h5>First Name</h5><p> {{ $contact->first_name }}</p>
                     </div>
-                    <div class="col-md-6">
+                    <br>
+                    <div class="col-md-4">
                         <h5>Last Name</h5><p> {{ $contact->last_name  }}</p>
                     </div>
                 </div>
-                <hr>
+                <br>
+                {{-- <hr style="width:90%"> --}}
                 
                 <div class="row">
-                    <div class="col-md-12">
+                    <div class="col-md-12 ">
                         <h5>Email</h5><p> {{ $contact->email }}</p>
                     </div>
                 </div>
-                <hr>
-                
+                {{-- <hr> --}}
+                <br>
                 <div class="row">
                     <div class="col-md-12">
                         <h5>Message</h5><p> {{ $contact->massage }}</p>
                     </div>
                 </div>
-                
-                <hr>
+<br>
+                {{-- <hr> --}}
                 <div class="row">
                     <div class="col-md-12">
                         <h5>Created Date</h5><p> {{ $contact->created_at }}</p>

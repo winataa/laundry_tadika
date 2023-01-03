@@ -1,34 +1,44 @@
 @extends('admin.layout.templateAdmin')
 
 @section('page-heading')
-<div class="justify-content-between mb-4">
-    <h1 class="h1 mb-0 text-gray-800 mb-4 ">Service</h1>
-    <a href="{{ url('service-create') }}" class="btn btn-primary">Add Service</a> <br>
 
-</div>
+
 @endsection
 
 @section('content')
 <div class="row">
     <div class="col-lg-12 grid-margin stretch-card">
+      
         <div class="card">
             <div class="card-body">
-            
-              {{-- <div class="row">
+              <div class="row">
+                <div class="col-md-10">
+                    <div class="justify-content-between mb-4">
+                      <h1 class="h1 mb-0 text-gray-800 mb-4 ">Service of Tadika Laundry</h1>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                  <a href="{{ url('service-create') }}" class="btn btn-primary ml-4">Add Service</a> <br>
+              </div>
+              </div>
+              
+              {{-- <a href="{{ url('service-create') }}" class="btn btn-primary">Add Service</a> <br> --}}
+              <div class="row">
+                <br>
                 <div class="col-md-12">
                     @if(session()->has('message'))
                     <div class="alert alert-success text-center">{{ session('message') }}
                     </div>
                     @endif
                 </div>
-              </div> --}}
+              </div>
 
             <br>
             <div class="table-responsive"> 
             <table class="table table-striped" class="display nowrap">
             <thead>
                 <tr>
-                    <th>ID</th>
+                    <th>Id</th>
                     <th>Image</th>
                     <th>Category</th>
                     <th>Product</th>

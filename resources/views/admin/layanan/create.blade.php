@@ -1,9 +1,9 @@
 @extends('admin.layout.templateAdmin')
 
 @section('page-heading2')
-<div class="justify-content-between mb-4">
+{{-- <div class="justify-content-between mb-4">
     <h1 class="h1 mb-0 text-gray-800 mb-4 ">Add Service</h1>
-</div>
+</div> --}}
 @endsection
 
 @section('content2')
@@ -11,68 +11,66 @@
     <div class="col-12 grid-margin stretch-card">
         <div class="card">
             <div class="card-body">
-                @if ($errors->any())
-                <div class="alert alert-danger">
-                    <ul>
-                        @foreach ($errors->all() as $error)
-                            <li>{{ $error }}</li>
-                        @endforeach
-                    </ul>
+                <div class="justify-content-between mb-4">
+                    <h1 class="h2 mb-0 text-gray-800 mb-4 ">Add Service</h1>
                 </div>
-            @endif
-                <h4 class="card-title">Product Service of Tadika Laundry</h4>
+                <hr>
+
+                @if ($errors->any())
+                    <div class="alert alert-danger">
+                        <ul>
+                            @foreach ($errors->all() as $error)
+                                <li>{{ $error }}</li>
+                            @endforeach
+                        </ul>
+                    </div>
+                @endif
+
               <form class="forms-sample" action="{{ url('service-store') }}" method="POST" enctype="multipart/form-data">
                 @csrf
-                <div class="form-group">
-                    <label>Category</label>
-                    {{-- <select name="id_category" class="form-control form-select-lg mb-3" id="id_category">
-                      <option value="" selected disabled hidden>Choose the Category</option>
-                      @foreach($kategori as $key =>$value)
-                          <option value={{$value->id}}>{{$value->name}}</option>
-                      @endforeach
-                    </select> --}}
-                    {{-- <select name="id_category" class="form-control form-select-lg mb-3" id="id_category">
-                        <option value="" selected disabled hidden>Choose the Category</option>
-                        @foreach($kategori as $key)
-                            <option value={{$key->id}}>{{$key->name}}</option>
-                        @endforeach
-                      </select> --}}
-                      <input type="text" name="category" class="form-control" value="{{ old('category') }}" placeholder="Name of the product">
-                      @error('name')
-                      <small class="text-danger">Please check the Category Name</small>
-                      
-                      @enderror
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label>Category</label>
+                            <input type="text" name="category" class="form-control" value="{{ old('category') }}" placeholder="Enter the category">
+                            <p style="font-size:13px" class="mt-0">Note: Laundry, Dry Cleaning, Just Wash, Just Dry, Just Iron  </p>
 
+                            @error('category')
+                            <small class="text-danger">Please check the Category Name</small>
+                            @enderror
+                        </div>
+                    </div>
 
-                  </div>
-                <div class="form-group">
-                    <label>Product</label>
-                    <input type="text" name="product" class="form-control" value="{{ old('product') }}" placeholder="Name of the product">
-                    @error('name')
-                    <small class="text-danger">Please check the Product Name</small>
-                    
-                    @enderror
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label>Product</label>
+                            <input type="text" name="product" class="form-control" value="{{ old('product') }}" placeholder="Enter the product">
+                            @error('product')
+                            <small class="text-danger">Please check the Product Name</small>
+                            @enderror
+                        </div>
+                    </div>
                 </div>
 
-                <div class="form-group">
-                    <label>Image</label>
-                    {{-- <input type="file" name="image" class="file-upload-default"> --}}
-                    <input type="file" class="form-control @error('image') is-invalid @enderror" name="image" value="{{ old('image') }}" accept="image/*">
-                    
-                    @error('image')
-                    <small class="text-danger">Please check the Images</small>   
-                    @enderror
-
-                </div>
-
-                <div class="form-group">
-                    <label>Price</label>
-                    {{-- <input type="file" name="image" class="file-upload-default"> --}}
-                    <input type="number" name="price" class="form-control" value="{{ old('laundry_price') }}" placeholder="Laundry Price">
-                    @error('price')
-                    <small class="text-danger">Please check the Laundry Price</small>
-                    @enderror
-
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label>Image</label>
+                            <input type="file" class="form-control @error('image') is-invalid @enderror" name="image" value="{{ old('image') }}" accept="image/*">
+                            @error('image')
+                            <small class="text-danger">Please check the Images</small>   
+                            @enderror
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label>Price</label>
+                            <input type="number" name="price" class="form-control" value="{{ old('price') }}" placeholder="Enter the price">
+                            @error('price')
+                            <small class="text-danger">Please check the Price</small>
+                            @enderror
+                        </div>
+                    </div>
                 </div>
                 {{-- <h4 class="card-title">Price Service of Tadika Laundry</h4>
 
