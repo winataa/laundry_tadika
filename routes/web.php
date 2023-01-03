@@ -39,7 +39,7 @@ use App\Http\Controllers\DashboardAdminController;
 // });
 
 Route::get('/', function () {
-    return view('landing_page');
+    return view('dbUser');
 });
 // Route::get('/', function () {
 //     return view('welcome');
