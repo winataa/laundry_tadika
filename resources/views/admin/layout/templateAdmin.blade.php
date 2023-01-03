@@ -66,7 +66,7 @@
               </a>
               
   
-                <a class="dropdown-item ml-3" style="font-family: Nunito" href="{{ route('logout') }}"
+                <a class="dropdown-item ml-3" style="font-family: Nunito; font-weight:600" href="{{ route('logout') }}"
                 onclick="event.preventDefault();
                               document.getElementById('logout-form').submit();">
                               <i class="fa-solid fa-power-off"></i>
