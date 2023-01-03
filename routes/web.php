@@ -39,7 +39,7 @@ use App\Http\Controllers\DashboardAdminController;
 // });
 
 Route::get('/', function () {
-    return view('dbUser');
+    return view('landing_page');
 });
 // Route::get('/', function () {
 //     return view('welcome');
@@ -143,7 +143,8 @@ Route::get('/create', function () {
 
 Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/abal', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'profile'])->name('profile');
 
 // Auth::routes();
 

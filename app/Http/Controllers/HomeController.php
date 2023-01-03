@@ -24,5 +24,13 @@ class HomeController extends Controller
     public function index()
     {
         return view('user.order.index');
+        // return view('user.home.profile');
+    }
+
+
+    public function profile()
+    {
+        return view('user.home.index');
+        // return view('user.home.profile');
     }
 }

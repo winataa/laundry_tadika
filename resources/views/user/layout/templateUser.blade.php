@@ -7,6 +7,7 @@
     <title>Document</title>
 
   <!-- plugins:css -->
+  <link rel="stylesheet" href="dbUser\template\css\cssProfile.css">
   <style>
     div.dataTables_wrapper {
         width: 800px;
@@ -111,8 +112,9 @@
               <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="profileDropdown">
                 <a class="dropdown-item">
                   <i class="ti-settings text-primary"></i>
-                  Settings
+                  {{ Auth::user()->name }}
                 </a>
+               
             
                   <a class="dropdown-item" href="{{ route('logout') }}"
                   onclick="event.preventDefault();
@@ -314,7 +316,7 @@
       <nav class="sidebar sidebar-offcanvas" id="sidebar">
         <ul class="nav">
           <li class="nav-item">
-            <a class="nav-link" href="index.html">
+            <a class="nav-link" href="{{ url('home') }}">
               <i class="icon-grid menu-icon"></i>
               <span class="menu-title">My Account</span>
             </a>
@@ -367,6 +369,8 @@
             {{ session('status') }}
         </div>
     @endif
+
+
         @yield('page-heading')
         @yield('content')
         @yield('page-heading2')

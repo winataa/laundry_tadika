@@ -68,7 +68,7 @@
            </div>
 
            <button type="submit" class="btn btn-primary mr-2">Submit</button>
-           <a href="{{ url('/')}}" class='btn btn-light'>Cancel</a>
+           <a href="{{ url('/')}}" class='btn btn-light'>Back</a>
         </form>
      </div>
    </body>
