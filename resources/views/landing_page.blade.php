@@ -169,7 +169,7 @@
           </center>
 
         <div class="card-container">
-            <div class="card card-how"  data-aos="zoom-in" >
+            <div class="card card-how" data-aos="zoom-in" >
                 <div class="card-image one"></div>
                     <div class="card-text text-how" >
                     <span class="name">Order</span>

@@ -90,7 +90,7 @@
                     <span class="focus-input100" data-placeholder="&#xf207;"></span>
                 </div> --}}
                 <span class="login100-form-title p-b-34 p-t-27">
-                    Log in
+                    Tadika Login
                 </span>
                                     <div class="wrap-input100 validate-input" data-validate = "Enter username">
                                         <label class="label_atas"for="email">{{ __('Email Address') }}</label>
