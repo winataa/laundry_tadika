@@ -61,14 +61,16 @@
                  {{-- <div class="form-row submit-btn">
                     <div class="input-data">
                        <div class="inner"></div>
-                       <input type="submit" value="submit">
+                       <input type="submit" value="submit"> 
+                      
                     </div>
                  </div> --}}
               </div>
            </div>
 
-           <button type="submit" class="btn btn-primary mr-2">Submit</button>
-           <a href="{{ url('/')}}" class='btn btn-light'>Cancel</a>
+           <!-- <button type="submit" class="btn btn-primary mr-2">Submit</button> -->
+           <button class="btnbtn-primary" type="submit">Submit</button>
+           <a href="{{ url('/')}}" class='btnbtn-light' style="text-decoration:none">Cancel</a>
         </form>
      </div>
    </body>
