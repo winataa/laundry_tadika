@@ -7,6 +7,7 @@
     <title>Document</title>
 
   <!-- plugins:css -->
+  <link rel="stylesheet" href="dbUser\template\css\cssProfile.css">
   <style>
     div.dataTables_wrapper {
         width: 800px;
@@ -111,17 +112,24 @@
               <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="profileDropdown">
                 <a class="dropdown-item">
                   <i class="ti-settings text-primary"></i>
-                  Settings
+                  {{ Auth::user()->name }}
                 </a>
-                <a class="dropdown-item">
-                  <i class="ti-power-off text-primary"></i>
-                  Logout
-                </a>
+               
+            
+                  <a class="dropdown-item" href="{{ route('logout') }}"
+                  onclick="event.preventDefault();
+                                document.getElementById('logout-form').submit();">
+                                <i class="ti-power-off text-primary"></i>
+                  {{ __('Logout') }}
+              </a>
+              <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                @csrf
+            </form>
               </div>
             </li>
             <li class="nav-item nav-settings d-none d-lg-flex">
               <a class="nav-link" href="#">
-                <i class="icon-ellipsis"></i>
+                <i class="icon-ellipsis"></i> 
               </a>
             </li>
           </ul>
@@ -308,7 +316,7 @@
       <nav class="sidebar sidebar-offcanvas" id="sidebar">
         <ul class="nav">
           <li class="nav-item">
-            <a class="nav-link" href="index.html">
+            <a class="nav-link" href="{{ url('home') }}">
               <i class="icon-grid menu-icon"></i>
               <span class="menu-title">My Account</span>
             </a>
@@ -356,6 +364,13 @@
 
 
       <div class="content-wrapper">
+        @if (session('status'))
+        <div class="alert alert-success" role="alert">
+            {{ session('status') }}
+        </div>
+    @endif
+
+
         @yield('page-heading')
         @yield('content')
         @yield('page-heading2')

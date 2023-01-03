@@ -16,10 +16,10 @@ class ServiceController extends Controller
      */
     public function index()
     {
-        $kategori=Category::all();
+        // $kategori=Category::all();
         $service = Service::all();
         return view('admin.layanan.index', [
-            'kategori' => $kategori,
+            // 'kategori' => $kategori,
             'service'=>$service
         ]);
     }
@@ -34,11 +34,11 @@ class ServiceController extends Controller
      
     public function create()
     {
-        $kategori=Category::all();;
+        // $kategori=Category::all();;
         //$service = Service::all();
         return view('admin.layanan.create', [
-            'kategori' => $kategori,
-           // 'service'=>$service
+            // 'kategori' => $kategori,
+            // 'service'=>$service
         ]);
 
 
@@ -55,13 +55,9 @@ class ServiceController extends Controller
     public function store(Request $request)
     {
        // dd($request);
-        $id_category = $request->id_category;
+        $category = $request->category;
         $product = $request->product;
-        $laundry_price = $request->laundry_price;
-        $dryclean_price = $request->dryclean_price;
-        $wash_price = $request->wash_price;
-        $dry_price = $request->dry_price;
-        $iron_price = $request->iron_price;
+        $price = $request->price;
         $image = $request->image;
 
         // // $table->bigIncrements('service_id');
@@ -76,30 +72,14 @@ class ServiceController extends Controller
         // //     $table->timestamps();
         // // });
         $validateData =$request->validate([
-            'id_category'=>[
+            'category'=>[
                 'string'
             ],
             'product'=>[
                 'required',
                 'string'
             ],
-            'laundry_price'=>[
-                'required',
-                'integer'
-            ],
-            'dryclean_price'=>[
-                'required',
-                'integer'
-            ],
-            'wash_price'=>[
-                'required',
-                'integer'
-            ],
-            'dry_price'=>[
-                'required',
-                'integer'
-            ],
-            'iron_price'=>[
+            'price'=>[
                 'required',
                 'integer'
             ],
@@ -136,13 +116,9 @@ class ServiceController extends Controller
             $service->image = $filename;
             }
     
-        $service ->id_category=$id_category;
+        $service ->category=$category;
         $service ->product=$product;
-        $service ->laundry_price=$laundry_price;
-        $service ->dryclean_price=$dryclean_price;
-        $service ->wash_price=$wash_price;
-        $service ->dry_price=$dry_price;
-        $service ->iron_price=$iron_price;
+        $service ->price=$price;
     
         $service->save();
 
@@ -172,30 +148,14 @@ class ServiceController extends Controller
     public function update(Request $request, Service $service)
     {
             $this->validate($request,[
-                'id_category'=>[
+                'category'=>[
                     'string'
                 ],
                 'product'=>[
                     'required',
                     'string'
                 ],
-                'laundry_price'=>[
-                    'required',
-                    'integer'
-                ],
-                'dryclean_price'=>[
-                    'required',
-                    'integer'
-                ],
-                'wash_price'=>[
-                    'required',
-                    'integer'
-                ],
-                'dry_price'=>[
-                    'required',
-                    'integer'
-                ],
-                'iron_price'=>[
+                'price'=>[
                     'required',
                     'integer'
                 ],
@@ -216,13 +176,9 @@ class ServiceController extends Controller
             //     }
            
             // $category->save();    
-            $service ->id_category=$request->id_category;
+            $service ->category=$request->category;
             $service ->product=$request->product;
-            $service ->laundry_price=$request->laundry_price;
-            $service ->dryclean_price=$request->dryclean_price;
-            $service ->wash_price=$request->wash_price;
-            $service ->dry_price=$request->dry_price;
-            $service ->iron_price=$request->iron_price;
+            $service ->price=$request->price;
     
             if($request->hasFile('image')){
                 $file = $request->file('image');
@@ -239,10 +195,10 @@ class ServiceController extends Controller
 
     public function edit(Service $service)
     {
-        $kategori=Category::all();
+        // $kategori=Category::all();
        // dd($service);
-        return view('admin.layanan.edit', compact(['kategori','service' ]));
-
+        // return view('admin.layanan.edit', compact(['kategori''service' ]));
+        return view('admin.layanan.edit', compact(['service' ]));
        // return view('admin.layanan.edit', compact('service'));
     }
 

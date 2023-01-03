@@ -29,12 +29,11 @@
             <thead>
                 <tr>
                     <th>ID</th>
+                    <th>Image</th>
+                    <th>Category</th>
                     <th>Product</th>
-                    <th>Laundry Price</th>
-                    <th>Dry Cleaning Price</th>
-                    <th>Wash Price</th>
-                    <th>Dry Price</th> 
-                    <th>Iron Price</th>
+                    <th>Price</th>
+                    
                     <th>Action</th>
                 </tr>
             </thead>
@@ -42,12 +41,16 @@
               @foreach ($service as $s)
               <tr>
                   <td>{{ $s->service_id }}</td>
+                  <td> <img src="{{ asset('/uploads/layanan/'.$s->image) }}" alt="" style="margin-top: 10px" width="60px" height="60px">
+                    {{-- {{ $s->image  }} --}}
+                    
+                  </td>
+                  <td>{{ $s->category }}</td>
                   <td>{{ $s->product  }}</td>
-                  <td>{{ $s->laundry_price}}</td>
-                  <td>{{ $s->dryclean_price}}</td>
-                  <td>{{ $s->wash_price}}</td>
-                  <td>{{ $s->dry_price}}</td>
-                  <td>{{ $s->iron_price}}</td>
+                  <td>{{ $s->price}}</td>
+              
+
+                 
                   <td>
                     <div style="display: flex">
                        <a href="{{ url('service-edit-'.$s->service_id)}}" class="btn btn-info">Edit</a>
@@ -57,7 +60,8 @@
                      </form>
                     </div>
                      
-                  </td>
+                  </td>    
+                  
               </tr>
 
               @endforeach

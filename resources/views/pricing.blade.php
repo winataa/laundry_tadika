@@ -76,8 +76,8 @@
                 <div class = "product-items">
                     <!-- single product 1 -->
                     <div class = "product">
-                        <div class = "product-content">
-                            <div class = "product-img">
+                        <div class = "product-content" data-aos="zoom-in">
+                            <div class = "product-img" data-aos="zoom-in">
                                 <img src = "img/shoe-1.png" alt = "product image">
                             </div>
                             <div class = "product-btns">

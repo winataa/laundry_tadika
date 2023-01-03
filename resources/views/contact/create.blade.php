@@ -69,7 +69,7 @@
            </div>
 
            <!-- <button type="submit" class="btn btn-primary mr-2">Submit</button> -->
-           <button class="btnbtn-primary" type="submit">Submit</button>
+            <button class="btnbtn-primary" type="submit">Submit</button> 
            <a href="{{ url('/')}}" class='btnbtn-light' style="text-decoration:none">Cancel</a>
         </form>
      </div>

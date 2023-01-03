@@ -26,19 +26,26 @@
                 @method('PUT')
                 <div class="form-group">
                     <label>Category</label>
+                    <input type="text" name="category" class="form-control" value="{{$service->category }}" placeholder="Name of the product">
+                    @error('name')
+                    <small class="text-danger">Please check the Category Name</small>
+                    
+                    @enderror
+                  </div>
+
                     {{-- <select name="id_category" class="form-control form-select-lg mb-3" id="id_category">
                       <option value="" selected disabled hidden>Choose the Category</option>
                       @foreach($kategori as $key =>$value)
                           <option value={{$value->id}}>{{$value->name}}</option>
                       @endforeach
                     </select> --}}
-                    <select name="id_category" class="form-control form-select-lg mb-3" id="id_category">
+                    {{-- <select name="id_category" class="form-control form-select-lg mb-3" id="id_category">
                         {{-- <option value="" selected disabled hidden>Choose the Category</option> --}}
-                        @foreach($kategori as $key)
+                        {{-- @foreach($kategori as $key)
                             <option value={{$key->id}} {{ $service->id_category == $key->id ? 'selected': ''}}                         >{{$key->name}}</option>
                         @endforeach
                       </select>
-                  </div>
+                  </div> --}}
 
                   {{-- <div class="mb-3">
                     <label for="exampleInputPassword1" class="form-label">Spesialis</label>
@@ -48,6 +55,7 @@
                       @endforeach
                     </select>
                   </div> --}}
+               
                      <div class="form-group">
                     <label>Product</label>
                     <input type="text" name="product" class="form-control" value="{{ $service->product }}" placeholder="Name">
@@ -70,9 +78,17 @@
 
                  
 
-            
+                <div class="form-group">
+                    <label>Price</label>
+                    {{-- <input type="file" name="image" class="file-upload-default"> --}}
+                    <input type="number" name="price" class="form-control" value="{{ $service->price }}" placeholder="Laundry Price">
+                    @error('price')
+                    <small class="text-danger">Please check the Laundry Price</small>
+                    @enderror
+
+                </div>
              
-                <h4 class="card-title">Price Service of Tadika Laundry</h4>
+                {{-- <h4 class="card-title">Price Service of Tadika Laundry</h4>
 
                 <div class="row">
                     <div class="col-md-4">
@@ -127,7 +143,7 @@
                             @enderror
                         </div>
                     </div>
-                </div>
+                </div> --}}
                 <button type="submit" class="btn btn-primary mr-2">Submit</button>
                 <a href="{{ url('service')}}" class='btn btn-light'>Cancel</a>
               </form>

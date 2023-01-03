@@ -54,9 +54,22 @@
                 <a class="nav-link nav-l " href="/contact-create" style="color: #0455c0">Contact</a>
               </li>
               <li class="nav-item mx-0.1">
-                <a class="btn btn-primary tombol px-4" style="margin-left: 50px" href="/register">REGIS</a>
+                {{-- @if (Route::has('login'))
+                <div class="hidden fixed top-0 right-0 px-6 py-4 sm:block">
+                    @auth --}}
+
+
+                        @if (Route::has('login'))
+                            <a href="{{ route('login') }}" class="btn btn-primary tombol px-4" class="nav-link nav-l " >LOGIN</a>
+                        @endif
+                    {{-- @endauth
+                </div>
+            @endif --}}
+                {{-- <a class="btn btn-primary tombol px-4" style="margin-left: 50px" href="/register">REGIS</a> --}}
               </li>
             </ul>
+
+    
           </div>
         </div>
       </nav>
@@ -156,7 +169,7 @@
           </center>
 
         <div class="card-container">
-            <div class="card card-how"  data-aos="zoom-in" >
+            <div class="card card-how" data-aos="zoom-in" >
                 <div class="card-image one"></div>
                     <div class="card-text text-how" >
                     <span class="name">Order</span>

@@ -31,12 +31,19 @@
                           <option value={{$value->id}}>{{$value->name}}</option>
                       @endforeach
                     </select> --}}
-                    <select name="id_category" class="form-control form-select-lg mb-3" id="id_category">
+                    {{-- <select name="id_category" class="form-control form-select-lg mb-3" id="id_category">
                         <option value="" selected disabled hidden>Choose the Category</option>
                         @foreach($kategori as $key)
                             <option value={{$key->id}}>{{$key->name}}</option>
                         @endforeach
-                      </select>
+                      </select> --}}
+                      <input type="text" name="category" class="form-control" value="{{ old('category') }}" placeholder="Name of the product">
+                      @error('name')
+                      <small class="text-danger">Please check the Category Name</small>
+                      
+                      @enderror
+
+
                   </div>
                 <div class="form-group">
                     <label>Product</label>
@@ -57,7 +64,17 @@
                     @enderror
 
                 </div>
-                <h4 class="card-title">Price Service of Tadika Laundry</h4>
+
+                <div class="form-group">
+                    <label>Price</label>
+                    {{-- <input type="file" name="image" class="file-upload-default"> --}}
+                    <input type="number" name="price" class="form-control" value="{{ old('laundry_price') }}" placeholder="Laundry Price">
+                    @error('price')
+                    <small class="text-danger">Please check the Laundry Price</small>
+                    @enderror
+
+                </div>
+                {{-- <h4 class="card-title">Price Service of Tadika Laundry</h4>
 
                 <div class="row">
                     <div class="col-md-4">
@@ -111,7 +128,7 @@
                 </div>
 
               </div>
- 
+  --}}
 
 
                 <button type="submit" class="btn btn-primary mr-2">Submit</button>

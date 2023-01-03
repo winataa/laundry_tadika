@@ -111,12 +111,18 @@
               <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="profileDropdown">
                 <a class="dropdown-item">
                   <i class="ti-settings text-primary"></i>
-                  Settings
+                  {{ Auth::user()->name }}
                 </a>
-                <a class="dropdown-item">
-                  <i class="ti-power-off text-primary"></i>
-                  Logout
-                </a>
+               
+
+                <a class="dropdown-item" href="{{ route('logout') }}"
+                onclick="event.preventDefault();
+                              document.getElementById('logout-form').submit();">
+                {{ __('Logout') }}
+            </a>
+            <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+              @csrf
+          </form>
               </div>
             </li>
             <li class="nav-item nav-settings d-none d-lg-flex">
@@ -308,7 +314,7 @@
       <nav class="sidebar sidebar-offcanvas" id="sidebar">
         <ul class="nav">
           <li class="nav-item">
-            <a class="nav-link" href="index.html">
+            <a class="nav-link" href={{ url('dashboard') }}>
               <i class="icon-grid menu-icon"></i>
               <span class="menu-title">Dashboard</span>
             </a>

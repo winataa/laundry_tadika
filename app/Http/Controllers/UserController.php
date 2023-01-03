@@ -2,8 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\User;
 use App\Models\Pengguna;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class UserController extends Controller
 {
@@ -23,11 +25,6 @@ class UserController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
-    {
-        //
-    }
-
     /**
      * Display the specified resource.
      *
@@ -46,10 +43,73 @@ class UserController extends Controller
      * @param  \App\Models\Pengguna  $pengguna
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Pengguna $pengguna)
+    public function store(Request $request)
     {
-        //
+            $name = $request->name;
+            $email = $request->email;
+            $phone = $request->phone;
+            $room = $request->room;
+            $street = $request->street;
+            $city = $request->city;
+            $state = $request->state;
+            $zip = $request->zip;
+
+            // $validateData =$request->validate([
+            // 'name'=>[
+            //     'required',
+            //     'string'
+            // ],
+            // 'email'=>[
+            //     'required',
+            // ],
+            // 'phone'=>[
+            //     'required',
+            //     'string'
+            // ],
+            // 'room'=>[
+            //     'required',
+            //     'integer'
+            // ],
+            // 'street'=>[
+            //     'required',
+            //     'string'
+            // ],
+            // 'city'=>[
+            //     'required',
+            //     'string'
+            // ],
+            // 'state'=>[
+            //     'required',
+            //     'string'
+            // ],  
+            // 'zip'=>[
+            //     'required',
+            //     'string'
+            // ],
+
+            // ]);
+        
+        $user = new User();
+        $user->name = $name;
+        $user->email = $email;
+        $user->phone = $phone;
+        $user->room = $room;
+        $user->street = $street;
+        $user->city = $city;
+        $user->state = $state;
+        $user->zip = $zip;
+
+        $user->save();
+
+        return redirect('home')->with('message', 'Category Update Succesfully');
     }
+
+    /**
+     * Remove the specified resource from storage.
+     *
+     * @param  \App\Models\Category  $category
+     * @return \Illuminate\Http\Response
+     */
 
     /**
      * Remove the specified resource from storage.

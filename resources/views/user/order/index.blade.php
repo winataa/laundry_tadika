@@ -9,6 +9,7 @@
 @endsection
 
 @section('content')
+
 <div class="row">
     <div class="col-lg-12 grid-margin stretch-card">
         <div class="card">
@@ -24,7 +25,7 @@
               </div> --}}
 
             <br>
-            <h1>haii</h1>
+            <h1>haii {{ __('Name') }}</h1>
             <div class="col-sm-6 col-md-4 col-lg-3">
               <i class="mdi mdi-account-check"></i> mdi mdi-account-check
           </div>
