@@ -48,8 +48,8 @@ Route::get('/user', function () {
     return view('user.order.index');
 });
 
-Route::get('/loginn', function () {
-    return view('loginn');
+Route::get('/user', function () {
+    return view('dbUser');
 });
 
 Route::middleware([
