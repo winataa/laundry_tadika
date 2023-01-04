@@ -60,7 +60,7 @@
 
 
                         @if (Route::has('login'))
-                            <a href="{{ route('login') }}" class="btn btn-primary tombol px-4" class="nav-link nav-l " >LOGIN</a>
+                            <a href="{{ route('login') }}" class="btn btn-primary tombol px-4" class="nav-link nav-l" >LOGIN</a>
                         @endif
                     {{-- @endauth
                 </div>

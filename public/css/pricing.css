@@ -95,6 +95,7 @@ img{
 .container{
     width: 88vw;
     margin: 0 auto;
+    transition: all 0.3s ease;
 }
 .lg-title,
 .md-title,
@@ -133,6 +134,7 @@ img{
     border-radius: 2rem;
     background: var(--alice-blue);
     padding: 3.2rem 0;
+    transition: all 0.3s ease;
 }
 .products .text-light{
     text-align: center;
@@ -147,12 +149,14 @@ img{
 .product:hover{
     /*box-shadow: 0px 15px 25px rgba(4, 85, 192, 0.25);*/
     box-shadow: 0px 15px 25px rgba(77, 77, 77, 0.25);
+    
 }
 .product-content{
     border-radius: 1rem 1rem 0rem 0rem;
     background: var(--gray);
     padding: 3rem 0.5rem 2rem 0.5rem;
     cursor: pointer;
+    
 }
 .product-img{
     background: var(--white-light);
@@ -168,7 +172,7 @@ img{
     justify-content: center;
     margin-top: 1.4rem;
     opacity: 0;
-    transition: opacity 0.6s ease;
+    transition: opacity 0.3s linear;
 }
 .btn-cart, .btn-buy{
     background: transparent;
