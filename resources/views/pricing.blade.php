@@ -29,12 +29,39 @@
         <link rel="icon" href="img/logo.png" type="image/x-icon">
 
         <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+        <!-- CSS Link -->
+        <link rel="stylesheet" href="css/style.css">
+
+        <!-- custom js file link  -->
+        <script src="public/js/pricing-popup.js" defer></script>
+
+        <!-- Font Link -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+        
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
+        <!-- Title dan Icon -->
+        <title>Tadika Laundry</title>
+        <link rel="icon" href="img/logo.png" type="image/x-icon">
+
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     </head>
 
     <body>
         <!-- NavBar -->
         <div style="width:100%;" data-aos="fade-down">
-            <nav class="navbar navbar-expand-lg navbar-light navigasi" style="width: 100%;">
+            <nav class="navbar navbar-expand-lg navbar-light navigasi" style="width: 50%;">
                   <div class="container cnav" style="width: 100%;">
                       <img src="img/logo.png" alt="Bootstrap" width="" height="76">
                       <a class="navbar-brand nav-b ms-4" style="color: #0455c0" href="#">Tadika Laundry</a>
@@ -50,7 +77,7 @@
                           <a class="nav-link nav-l " href="#varian" style="color: #0455c0">Service</a>
                         </li>
                         <li class="nav-item mx-0.1">
-                          <a class="nav-link nav-l " href="/pricing" style="color: #0455c0">Pricing</a>
+                          <a class="nav-link nav-l " href="/pricing" style="color: #18191a">Pricing</a>
                         </li>
                         <li class="nav-item mx-0.1">
                           <a class="nav-link nav-l " href="/faq" style="color: #0455c0">FAQ</a>
@@ -75,9 +102,9 @@
 
                 <div class = "product-items">
                     <!-- single product 1 -->
-                    <div class = "product">
-                        <div class = "product-content" data-aos="zoom-in">
-                            <div class = "product-img" data-aos="zoom-in">
+                    <div class = "product" data-aos="zoom-in">
+                        <div class = "product-content" data-aos="zoom-out">
+                            <div class = "product-img" data-aos="zoom-in-up">
                                 <img src = "img/shoe-1.png" alt = "product image">
                             </div>
                             <div class = "product-btns">
@@ -114,9 +141,9 @@
                     </div>
                     <!-- end of single product 1 -->
                     <!-- single product 2 -->
-                    <div class = "product">
-                        <div class = "product-content">
-                            <div class = "product-img">
+                    <div class = "product" data-aos="zoom-in">
+                        <div class = "product-content" data-aos="zoom-out">
+                            <div class = "product-img" data-aos="zoom-in-up">
                                 <img src = "img/shoe-2.png" alt = "product image">
                             </div>
                             <div class = "product-btns">
@@ -150,9 +177,9 @@
                     </div>
                     <!-- end of single product 2 -->
                     <!-- single product 3 -->
-                    <div class = "product">
-                        <div class = "product-content">
-                            <div class = "product-img">
+                    <div class = "product" data-aos="zoom-in">
+                        <div class = "product-content" data-aos="zoom-out">
+                            <div class = "product-img" data-aos="zoom-in-up">
                                 <img src = "img/shoe-3.png" alt = "product image">
                             </div>
                             <div class = "product-btns">
@@ -186,9 +213,9 @@
                     </div>
                     <!-- end of single product 3 -->
                     <!-- single product 4 -->
-                    <div class = "product">
-                        <div class = "product-content">
-                            <div class = "product-img">
+                    <div class = "product" data-aos="zoom-in">
+                        <div class = "product-content" data-aos="zoom-out">
+                            <div class = "product-img" data-aos="zoom-in-up">
                                 <img src = "img/shoe-4.png" alt = "product image">
                             </div>
                             <div class = "product-btns">
@@ -225,9 +252,9 @@
                     </div>
                     <!-- end of single product 4 -->
                     <!-- single product 5 -->
-                    <div class = "product">
-                        <div class = "product-content">
-                            <div class = "product-img">
+                    <div class = "product" data-aos="zoom-in">
+                        <div class = "product-content" data-aos="zoom-out">
+                            <div class = "product-img" data-aos="zoom-in-up">
                                 <img src = "img/shoe-5.png" alt = "product image">
                             </div>
                             <div class = "product-btns">
@@ -261,9 +288,9 @@
                     </div>
                     <!-- end of single product 5 -->
                     <!-- single product 6 -->
-                    <div class = "product">
-                        <div class = "product-content">
-                            <div class = "product-img">
+                    <div class = "product" data-aos="zoom-in">
+                        <div class = "product-content" data-aos="zoom-out">
+                            <div class = "product-img" data-aos="zoom-in-up">
                                 <img src = "img/shoe-6.png" alt = "product image">
                             </div>
                             <div class = "product-btns">
@@ -297,9 +324,9 @@
                     </div>
                     <!-- end of single product 6 -->
                     <!-- single product 7 -->
-                    <div class = "product">
-                        <div class = "product-content">
-                            <div class = "product-img">
+                    <div class = "product" data-aos="zoom-in">
+                        <div class = "product-content" data-aos="zoom-out">
+                            <div class = "product-img" data-aos="zoom-in-up">
                                 <img src = "img/shoe-7.png" alt = "product image">
                             </div>
                             <div class = "product-btns">
@@ -333,9 +360,9 @@
                     </div>
                     <!-- end of single product 7 -->
                     <!-- single product 8 -->
-                    <div class = "product">
-                        <div class = "product-content">
-                            <div class = "product-img">
+                    <div class = "product" data-aos="zoom-in">
+                        <div class = "product-content" data-aos="zoom-out">
+                            <div class = "product-img" data-aos="zoom-in-up">
                                 <img src = "img/shoe-8.png" alt = "product image">
                             </div>
                             <div class = "product-btns">
@@ -374,6 +401,173 @@
                 </div>
             </div>
         </div>
+        
+        
+        <div class="products-preview">
+
+            <div class="preview" data-target="p-1">
+               <i class="fas fa-times"></i>
+               <img src="img/shoe-1.png" alt="">
+               <h3>t-shirt</h3>
+               <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                  <span>( 250 )</span>
+               </div>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, dolorem.</p>
+               <div class="price">$2.00</div>
+               <div class="buttons">
+                  <a href="#" class="buy">wash now</a>
+                  <a href="#" class="cart">add to cart</a>
+               </div>
+            </div>
+         
+            <div class="preview" data-target="p-2">
+               <i class="fas fa-times"></i>
+               <img src="img/shoe-2.png" alt="">
+               <h3>safari shirt</h3>
+               <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                  <span>( 250 )</span>
+               </div>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, dolorem.</p>
+               <div class="price">$2.00</div>
+               <div class="buttons">
+                  <a href="#" class="buy">wash now</a>
+                  <a href="#" class="cart">add to cart</a>
+               </div>
+            </div>
+         
+            <div class="preview" data-target="p-3">
+               <i class="img/shoe-3.png"></i>
+               <img src="images/3.png" alt="">
+               <h3>necktie</h3>
+               <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                  <span>( 250 )</span>
+               </div>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, dolorem.</p>
+               <div class="price">$2.00</div>
+               <div class="buttons">
+                  <a href="#" class="buy">wash now</a>
+                  <a href="#" class="cart">add to cart</a>
+               </div>
+            </div>
+         
+            <div class="preview" data-target="p-4">
+               <i class="fas fa-times"></i>
+               <img src="img/shoe-4.png" alt="">
+               <h3>men boxer</h3>
+               <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                  <span>( 250 )</span>
+               </div>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, dolorem.</p>
+               <div class="price">$2.00</div>
+               <div class="buttons">
+                  <a href="#" class="buy">wash now</a>
+                  <a href="#" class="cart">add to cart</a>
+               </div>
+            </div>
+         
+            <div class="preview" data-target="p-5">
+               <i class="fas fa-times"></i>
+               <img src="img/shoe-5.png" alt="">
+               <h3>unisex suit</h3>
+               <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                  <span>( 250 )</span>
+               </div>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, dolorem.</p>
+               <div class="price">$2.00</div>
+               <div class="buttons">
+                  <a href="#" class="buy">wash now</a>
+                  <a href="#" class="cart">add to cart</a>
+               </div>
+            </div>
+         
+            <div class="preview" data-target="p-6">
+               <i class="fas fa-times"></i>
+               <img src="img/shoe-6.png" alt="">
+               <h3>women underwear</h3>
+               <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                  <span>( 250 )</span>
+               </div>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, dolorem.</p>
+               <div class="price">$2.00</div>
+               <div class="buttons">
+                  <a href="#" class="buy">wash now</a>
+                  <a href="#" class="cart">add to cart</a>
+               </div>
+            </div>
+
+            <div class="preview" data-target="p-7">
+                <i class="fas fa-times"></i>
+                <img src="img/shoe-7.png" alt="">
+                <h3>blazer</h3>
+                <div class="stars">
+                   <i class="fas fa-star"></i>
+                   <i class="fas fa-star"></i>
+                   <i class="fas fa-star"></i>
+                   <i class="fas fa-star"></i>
+                   <i class="fas fa-star-half-alt"></i>
+                   <span>( 250 )</span>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, dolorem.</p>
+                <div class="price">$2.00</div>
+                <div class="buttons">
+                   <a href="#" class="buy">wash now</a>
+                   <a href="#" class="cart">add to cart</a>
+                </div>
+             </div>
+
+             <div class="preview" data-target="p-8">
+                <i class="fas fa-times"></i>
+                <img src="img/shoe-8.png" alt="">
+                <h3>blazer</h3>
+                <div class="stars">
+                   <i class="fas fa-star"></i>
+                   <i class="fas fa-star"></i>
+                   <i class="fas fa-star"></i>
+                   <i class="fas fa-star"></i>
+                   <i class="fas fa-star-half-alt"></i>
+                   <span>( 250 )</span>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, dolorem.</p>
+                <div class="price">$2.00</div>
+                <div class="buttons">
+                   <a href="#" class="buy">wash now</a>
+                   <a href="#" class="cart">add to cart</a>
+                </div>
+             </div>
+         
+         </div>
+
+
 
         {{--
         <div class = "product-collection">
@@ -424,7 +618,11 @@
                 </div>
             </div>
         </div> --}}
-        
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
     </body>
 </html>
 {{--@endsection--}}
