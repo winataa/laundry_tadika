@@ -1,14 +1,14 @@
 <!DOCTYPE html>
-<!-- Created By CodingNepal -->
-<html lang="en" dir="ltr">
-   <head>
-      <meta charset="utf-8">
-      <title>Contact</title>
-      <link rel="stylesheet" href="css/kontak.css">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   </head>
-   <body>
-    <div class="container">
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <link rel="stylesheet" href="css/kontak.css">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>Document</title>
+</head>
+<body>
+   <div class="container" style="background-image: url('img/bg-01.jpg');">
       <div class="row">
          <div class="col-md-12">
              @if(session()->has('message'))
@@ -26,13 +26,13 @@
               <div class="input-data">
                  <input type="text" name="first_name" required>
                  <div class="underline"></div>
-                 <label for="">First Name</label>
+                 <label style="padding-left: 10px" for="">First Name</label>
                  {{-- <input type="text" name="first_name" class="form-control" value="{{ old('name') }}" placeholder="Name"> --}}
               </div>
               <div class="input-data">
                  <input type="text" name="last_name" required>
                  <div class="underline"></div>
-                 <label for="">Last Name</label>
+                 <label style="padding-left: 10px" for="">Last Name</label>
                  {{-- <input type="text" name="last_name" class="form-control" value="{{ old('name') }}" placeholder="Name"> --}}
               </div>
            </div>
@@ -40,7 +40,7 @@
               <div class="input-data">
                  <input type="text" name="email" required>
                  <div class="underline"></div>
-                 <label for="">Email Address</label>
+                 <label style="padding-left: 10px" for="">Email Address</label>
                  {{-- <input type="text" name="email" class="form-control" value="{{ old('name') }}" placeholder="Name"> --}}
               </div>
               <!-- <div class="input-data">
@@ -55,7 +55,7 @@
                  <br />
                  <div class="underline"></div>
                  {{-- <input type="text"  name="massage"  required> --}}
-                 <label for="">Write your message</label>
+                 <label style="padding-left: 10px" for="">Write your message</label>
                  <br />
                  {{-- <input type="text" name="massage" class="form-control" value="{{ old('name') }}" placeholder="Name"> --}}
                  {{-- <div class="form-row submit-btn">
@@ -73,5 +73,5 @@
            <a href="{{ url('/')}}" class='btnbtn-light' style="text-decoration:none">Cancel</a>
         </form>
      </div>
-   </body>
+</body>
 </html>

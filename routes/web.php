@@ -173,7 +173,7 @@ Route::middleware('auth', 'isAdmin')->group(function(){
             Route::get('/service', 'index');
             Route::get('/service-create', 'create');
             Route::post('/service-store', 'store');
-            Route::get('/service-edit-{service}', 'edit');
+            Route::get('/service-edit-', 'edit');
             Route::put('/service-update-{service}', 'update');
             Route::get('/service-delete-{service}', 'delete');
            // Route::get('category/edit/{id}', 'edit');

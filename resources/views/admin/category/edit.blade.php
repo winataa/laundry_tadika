@@ -1,9 +1,9 @@
 @extends('admin.layout.templateAdmin')
 
 @section('page-heading2')
-<div class="justify-content-between mb-4">
+{{-- <div class="justify-content-between mb-4">
     <h1 class="h1 mb-0 text-gray-800 mb-4 ">Edit Category</h1>
-</div>
+</div> --}}
 @endsection
 
 @section('content2')
@@ -11,16 +11,22 @@
     <div class="col-12 grid-margin stretch-card">
         <div class="card">
             <div class="card-body">
-                @if ($errors->any())
-                <div class="alert alert-danger">
-                    <ul>
-                        @foreach ($errors->all() as $error)
-                            <li>{{ $error }}</li>
-                        @endforeach
-                    </ul>
+ 
+                <div class="justify-content-between mb-4">
+                    <h1 class="h2 mb-0 text-gray-800 mb-4 ">Edit Service</h1>
                 </div>
-            @endif
-                <h4 class="card-title">Category of Tadika Laundry</h4>
+                <hr>
+
+                @if ($errors->any())
+                    <div class="alert alert-danger">
+                        <ul>
+                            @foreach ($errors->all() as $error)
+                                <li>{{ $error }}</li>
+                            @endforeach
+                        </ul>
+                    </div>
+                @endif
+
               <form class="forms-sample" action="{{ url('category-update-'.$category->id) }}" method="POST" enctype="multipart/form-data">
                 @csrf
                 @method('PUT')

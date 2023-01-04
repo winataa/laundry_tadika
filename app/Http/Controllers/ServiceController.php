@@ -198,7 +198,7 @@ class ServiceController extends Controller
         // $kategori=Category::all();
        // dd($service);
         // return view('admin.layanan.edit', compact(['kategori''service' ]));
-        return view('admin.layanan.edit', compact(['service' ]));
+        return view('admin.layanan.edit', compact('service'));
        // return view('admin.layanan.edit', compact('service'));
     }
 

@@ -39,7 +39,7 @@
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav" >
               <li class="nav-item nav-i">
-                <a class="nav-link  nav-l active" aria-current="page" href="/register" style="color: #0455c0">Home</a>
+                <a class="nav-link  nav-l active" aria-current="page" href="/" style="color: #0455c0">Home</a>
               </li>
               <li class="nav-item mx-0.1">
                 <a class="nav-link nav-l " href="#varian" style="color: #0455c0">Service</a>
@@ -60,7 +60,7 @@
 
 
                         @if (Route::has('login'))
-                            <a href="{{ route('login') }}" class="btn btn-primary tombol px-4" class="nav-link nav-l" >LOGIN</a>
+                            <a href="{{ route('login') }}" class="btn btn-primary tombol px-4 mx-5" class="nav-link nav-l " >LOGIN</a>
                         @endif
                     {{-- @endauth
                 </div>
@@ -74,20 +74,27 @@
         </div>
       </nav>
   </div>
-      
+      <br>
     <!-- Hero Section -->
     <section id="hero" class="hero">
           <div>
           <!-- class="row" style="height: 732px; margin-top:10px; width:auto" -->
-            <div class="halaman2" style="padding-left: 100px;">
-              <div class="box_50 my-auto hero-tagline" data-aos="fade-right" style="padding-left: 200px" style="padding-top: 500px">
+            <div class="halaman2" style="padding-left: 50px;">
+              {{-- <div class="box_50 my-auto hero-tagline" data-aos="fade-right" style="padding-left: 200px">
               <!-- <div class="col-4 my-auto hero-tagline" style="margin-left: 100px"> -->
                   <h1><span class="fw-bold" data-aos="fade-right" ><br><br>Your One Stop Solution</h1>
                   <h1><span class="fw-bold" data-aos="fade-right" >For Every Sheets</h1>
                   <h3><br> Percayakan laundry Anda pada Service <br> Tadika Laundry yang sudah dipercaya <br> oleh banyak customer.</h3> <br>
                   <a class="btn btn-primary tombol px-4" href="#how">Swipe Down</a>
-              </div>
-
+              </div> --}}
+              <div class="halaman2" style="padding-left: 50px;">
+                <div class="box_50 my-auto hero-tagline" data-aos="fade-right">
+                <!-- <div class="col-4 my-auto hero-tagline" style="margin-left: 100px"> -->
+                    <h1><span class="fw-bold" data-aos="fade-right" >Your One Stop <br> Solution for <br> Every Sheets</span></h1>
+                    <h3><br> Percayakan laundry Anda pada Service <br> Tadika Laundry yang sudah dipercaya <br> oleh banyak customer.</h3> <br>
+                    <a class="btn btn-primary tombol px-4" href="#how">Swipe Down</a>
+                </div>
+  
               <div class="gambar_50" data-aos="fade-left">
               <!-- <div class="col img-fluid"> -->
                 <img src="img/kiri.png" alt="gambar orang laundry" style="width: 100%;">

@@ -10,17 +10,17 @@ class Service extends Model
     use HasFactory;
 
     protected $table = 'services';
-    // protected $primaryKey = "service_id";
+    protected $primaryKey = "service_id";
 
-    // protected $guarded = [];
+    protected $guarded = [];
 
-    protected $fillable = [
-        'service_id',
-        'category',
-        'product',
-        'price',
-        'image',
-    ];
+    // protected $fillable = [
+    //     'service_id',
+    //     'category',
+    //     'product',
+    //     'price',
+    //     'image',
+    // ];
 
     // public function category(){
     //     return $this->belongsTo(Category::class);

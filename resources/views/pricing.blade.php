@@ -61,7 +61,7 @@
     <body>
         <!-- NavBar -->
         <div style="width:100%;" data-aos="fade-down">
-            <nav class="navbar navbar-expand-lg navbar-light navigasi" style="width: 50%;">
+            <nav class="navbar navbar-expand-lg navbar-light navigasi" style="width: 100%;">
                   <div class="container cnav" style="width: 100%;">
                       <img src="img/logo.png" alt="Bootstrap" width="" height="76">
                       <a class="navbar-brand nav-b ms-4" style="color: #0455c0" href="#">Tadika Laundry</a>
@@ -71,13 +71,13 @@
                     <div class="collapse navbar-collapse" id="navbarNav">
                       <ul class="navbar-nav" >
                         <li class="nav-item nav-i">
-                          <a class="nav-link  nav-l active" aria-current="page" href="/register" style="color: #0455c0">Home</a>
+                          <a class="nav-link  nav-l active" aria-current="page" href="/" style="color: #0455c0">Home</a>
                         </li>
                         <li class="nav-item mx-0.1">
-                          <a class="nav-link nav-l " href="#varian" style="color: #0455c0">Service</a>
+                          <a class="nav-link nav-l " href="/login" style="color: #0455c0">Service</a>
                         </li>
                         <li class="nav-item mx-0.1">
-                          <a class="nav-link nav-l " href="/pricing" style="color: #18191a">Pricing</a>
+                          <a class="nav-link nav-l " href="/pricing" style="color: #0455c0">Pricing</a>
                         </li>
                         <li class="nav-item mx-0.1">
                           <a class="nav-link nav-l " href="/faq" style="color: #0455c0">FAQ</a>
@@ -86,9 +86,22 @@
                           <a class="nav-link nav-l " href="/contact-create" style="color: #0455c0">Contact</a>
                         </li>
                         <li class="nav-item mx-0.1">
-                          <a class="btn btn-primary tombol px-4" style="margin-left: 50px" href="/register">REGIS</a>
+                          {{-- @if (Route::has('login'))
+                          <div class="hidden fixed top-0 right-0 px-6 py-4 sm:block">
+                              @auth --}}
+          
+          
+                                  @if (Route::has('login'))
+                                      <a href="{{ route('login') }}" class="btn btn-primary tombol px-4 mx-5" class="nav-link nav-l " >LOGIN</a>
+                                  @endif
+                              {{-- @endauth
+                          </div>
+                      @endif --}}
+                          {{-- <a class="btn btn-primary tombol px-4" style="margin-left: 50px" href="/register">REGIS</a> --}}
                         </li>
                       </ul>
+          
+              
                     </div>
                   </div>
                 </nav>
@@ -121,7 +134,7 @@
 
                         <div class = "product-info">
                             <div class = "product-info-top">
-                                <h2 class = "sm-title">men's clotlaundryhing</h2>
+                                <h2 class = "sm-title">men's clothing</h2>
                                 <!--<div class = "rating">
                                     <span><i class = "fas fa-star"></i></span>
                                     <span><i class = "fas fa-star"></i></span>
@@ -131,13 +144,13 @@
                                 </div>-->
                             </div>
                             <a href = "#" class = "product-name">t-shirt</a>
-                            <!--<p class = "product-price-disc">Rp30.000</p>-->
+                            <p class = "product-price-disc">Rp30.000</p>
                             <p class = "product-price">Rp22.000</p>
                         </div>
 
-                        <!--<div class = "off-info">
+                        <div class = "off-info">
                             <h2 class = "sm-title">26% off</h2>
-                        </div>-->
+                        </div>
                     </div>
                     <!-- end of single product 1 -->
                     <!-- single product 2 -->
@@ -170,7 +183,7 @@
                                 </div>-->
                             </div>
                             <a href = "#" class = "product-name">safari shirt</a>
-                            
+                            <br>
                             <!-- <p class = "product-price">Rp40.000</p> -->
                             <p class = "product-price">Rp30.000</p>
                         </div>
@@ -206,7 +219,7 @@
                                 </div>-->
                             </div>
                             <a href = "#" class = "product-name">necktie</a>
-                            
+                            <br>
                             <!-- <p class = "product-price">Rp30.000</p> -->
                             <p class = "product-price">Rp22.000</p>
                         </div>
@@ -242,13 +255,13 @@
                                 </div>-->
                             </div>
                             <a href = "#" class = "product-name">men boxer</a>
-                            <!--<p class = "product-price-disc">Rp15.000</p>-->
+                            <p class = "product-price-disc">Rp15.000</p>
                             <p class = "product-price">Rp10.000</p>
                         </div>
 
-                        <!--<div class = "off-info">
+                        <div class = "off-info">
                             <h2 class = "sm-title">25% off</h2>
-                        </div>-->
+                        </div>
                     </div>
                     <!-- end of single product 4 -->
                     <!-- single product 5 -->
@@ -282,7 +295,7 @@
                             </div>
                             <a href = "#" class = "product-name">unisex suit</a>
                             <!-- <p class = "product-price">$ 150.00</p> -->
-                            
+                            <br>
                             <p class = "product-price">Rp27.000</p>
                         </div>
                     </div>
@@ -318,7 +331,7 @@
                             </div>
                             <a href = "#" class = "product-name">women underwear</a>
                             <!-- <p class = "product-price">$ 150.00</p> -->
-                            
+                            <br>
                             <p class = "product-price">Rp10.000</p>
                         </div>
                     </div>
@@ -354,7 +367,7 @@
                             </div>
                             <a href = "#" class = "product-name">blazer</a>
                             <!-- <p class = "product-price">$ 150.00</p> -->
-                            
+                            <br>
                             <p class = "product-price">Rp22.000</p>
                         </div>
                     </div>
@@ -389,12 +402,12 @@
                                 </div>-->
                             </div>
                             <a href = "#" class = "product-name">towel</a>
-                            <!--<p class = "product-price-disc">Rp20.000</p>-->
+                            <p class = "product-price-disc">Rp20.000</p>
                             <p class = "product-price">Rp10.000</p>
                         </div>
 
-                        <!--<div class = "off-info">
-                            <h2 class = "sm-title">35% off</h2>-->
+                        <div class = "off-info">
+                            <h2 class = "sm-title">35% off</h2>
                         </div>
                     </div>
                     <!-- end of single product 8 -->
@@ -418,7 +431,7 @@
                   <span>( 250 )</span>
                </div>
                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, dolorem.</p>
-               <div class="price">Rp22.000</div>
+               <div class="price">$2.00</div>
                <div class="buttons">
                   <a href="#" class="buy">wash now</a>
                   <a href="#" class="cart">add to cart</a>
@@ -438,7 +451,7 @@
                   <span>( 250 )</span>
                </div>
                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, dolorem.</p>
-               <div class="price">Rp30.000</div>
+               <div class="price">$2.00</div>
                <div class="buttons">
                   <a href="#" class="buy">wash now</a>
                   <a href="#" class="cart">add to cart</a>
@@ -458,7 +471,7 @@
                   <span>( 250 )</span>
                </div>
                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, dolorem.</p>
-               <div class="price">Rp22.000</div>
+               <div class="price">$2.00</div>
                <div class="buttons">
                   <a href="#" class="buy">wash now</a>
                   <a href="#" class="cart">add to cart</a>
@@ -478,7 +491,7 @@
                   <span>( 250 )</span>
                </div>
                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, dolorem.</p>
-               <div class="price">Rp10.000</div>
+               <div class="price">$2.00</div>
                <div class="buttons">
                   <a href="#" class="buy">wash now</a>
                   <a href="#" class="cart">add to cart</a>
@@ -498,7 +511,7 @@
                   <span>( 250 )</span>
                </div>
                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, dolorem.</p>
-               <div class="price">Rp27.000</div>
+               <div class="price">$2.00</div>
                <div class="buttons">
                   <a href="#" class="buy">wash now</a>
                   <a href="#" class="cart">add to cart</a>
@@ -518,7 +531,7 @@
                   <span>( 250 )</span>
                </div>
                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, dolorem.</p>
-               <div class="price">Rp10.000</div>
+               <div class="price">$2.00</div>
                <div class="buttons">
                   <a href="#" class="buy">wash now</a>
                   <a href="#" class="cart">add to cart</a>
@@ -538,7 +551,7 @@
                    <span>( 250 )</span>
                 </div>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, dolorem.</p>
-                <div class="price">Rp22.000</div>
+                <div class="price">$2.00</div>
                 <div class="buttons">
                    <a href="#" class="buy">wash now</a>
                    <a href="#" class="cart">add to cart</a>
@@ -558,7 +571,7 @@
                    <span>( 250 )</span>
                 </div>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, dolorem.</p>
-                <div class="price">Rp10.000</div>
+                <div class="price">$2.00</div>
                 <div class="buttons">
                    <a href="#" class="buy">wash now</a>
                    <a href="#" class="cart">add to cart</a>
