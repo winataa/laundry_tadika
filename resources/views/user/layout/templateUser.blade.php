@@ -330,8 +330,8 @@
             </a>
             <div class="collapse" id="form-elements">
               <ul class="nav flex-column sub-menu">
-                <li class="nav-item"><a class="nav-link" href={{ url('category') }}>Category</a></li>
-                <li class="nav-item"><a class="nav-link" href={{ url('service') }}>Services</a></li>
+                {{-- <li class="nav-item"><a class="nav-link" href={{ url('category') }}>Category</a></li> --}}
+                <li class="nav-item"><a class="nav-link" href={{ url('service_user') }}>Product</a></li>
               </ul>
             </div>
           </li>

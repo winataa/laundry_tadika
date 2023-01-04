@@ -184,3 +184,14 @@ Route::middleware('auth', 'isAdmin')->group(function(){
 Route::get('/dashboard-user', function () {
     return view('user.home.profile');;
 });
+
+
+// Route::get('/service_user', function () {
+//     return view('user.home.service');
+// });
+
+
+// fetch file buat rout fetchnya
+// Route::get('/home{service}', [App\Http\Controllers\HomeController::class, 'service']);
+Route::get('service_user', [App\Http\Controllers\UseeServiceController::class, 'index']);
+
