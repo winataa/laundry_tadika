@@ -44,7 +44,7 @@
                             
                             <td>
                                 <div style="display: flex">
-                                <a href="{{ url('service-edit-'.$s->service_id)}}" class="btn btn-info">Add to Chart</a>
+                                <a href="#" class="btn btn-info">Add to Chart</a>
                                 </div>
                                 
                             </td>    
