@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\User;
+use App\Models\Service;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -29,6 +30,13 @@ class HomeController extends Controller
         // return view('user.home.profile');
     }
 
+    // untuk nampilin dari db
+    public function show()
+    {
+        // $data=Service::all();
+        // return view('service_user',['services'->$data]);
+        return Service::all();
+    }
 
     public function profile()
     {

@@ -212,9 +212,9 @@
             </button> --}}
             <div> 
             @if (Route::has('login'))
-            <li class="nav-item">
-                <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
-            </li>
+            {{-- <li class="nav-item"> --}}
+                <a class="nav-link" href="{{ route('login') }}">Already Have an Account? Login Here</a>
+            {{-- </li> --}}
         @endif
 </div>
 <div class="row mb-0">
